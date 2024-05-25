@@ -30,3 +30,7 @@ Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Da
 ![Plug-in erfolgreich installiert](<_includes/install_installed.png>)
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
+
+## Projekt eröffnen
+
+mach mol
