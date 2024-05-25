@@ -17,17 +17,17 @@ Installieren Sie die Version 3.34 (LTR) von QGIS. [Link](https://download.qgis.o
 Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Daher muss es als .zip-Datei installiert werden. Falls Sie diese Datei nicht besitzen, könne Sie diese beim Institut Geomatik der Fachhochschule anfragen: [geomatik-studieren.ch](https://geomatik-studieren.ch)
 
 1. Navigieren Sie zu _Erweiterungen_ → _Erweiterungen verwalten und installieren..._
- ![Erweiterungen installieren](install/install_add_plugin.png)
+ ![Erweiterungen installieren](./images/install/install_add_plugin.png)
 
 2. Es öffnet sich ein neues Fenster. Klicken Sie hier auf _Aus ZIP installieren_
 ![Aus ZIP installieren](./images/install/install_from_zip.png)
 
 3. Klicken Sie auf den Knopf _..._ und wählen die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_
-![Erweiterung installieren](_includes/install_install_plugin.png)
+![Erweiterung installieren](./images/install/install_install_plugin.png)
 
 4. Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen um _plugin_-Verzeichnis von QGIS befindet.
 5. Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ auftauchen
-![Plug-in erfolgreich installiert](<_includes/install_installed.png>)
+![Plug-in erfolgreich installiert](./images/install/install_installed.png)
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
