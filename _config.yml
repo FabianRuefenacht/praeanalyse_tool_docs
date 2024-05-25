@@ -1,7 +1,7 @@
 title: Präanalysetool Wiki
-logo: ./_includes/icon.png
+logo: ./images/icon.png
 description: Benutzerhandbuch Präanalysetool (QGIS-Plug-in)
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
-favicon: ./_includes/icon.png
+favicon: ./images/icon.png
