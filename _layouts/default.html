@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'de-ch' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="../images/icon.png">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+    {% seo %}
     {% include head-custom.html %}
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -40,6 +36,16 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+        <p>
+          Benutzerhandbuch Präanalysetool (QGIS-Plug-in).<br/>
+          Diese Anleitung wurde im Rahmen der Bachelorthesis BTh03 erstellt von<br/>
+          <br/>
+          Fabian Rüfenacht<br/>
+          Fachhochschule Nordwestschweiz<br/>
+          Institut Geomatik<br/>
+          Hofackerstrasse 30<br/>
+          4132 Muttenz
+        </p>
 
         <h2>Inhalt</h2>
 
