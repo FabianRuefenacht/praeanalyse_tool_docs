@@ -33,6 +33,6 @@ Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Da
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
-## Projekt eröffnen
+## Projekt eröffnen {#openProject}
 
 mach mol
