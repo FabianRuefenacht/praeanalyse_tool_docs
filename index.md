@@ -17,10 +17,10 @@ Installieren Sie die Version 3.34 (LTR) von QGIS. [Link](https://download.qgis.o
 Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Daher muss es als .zip-Datei installiert werden. Falls Sie diese Datei nicht besitzen, könne Sie diese beim Institut Geomatik der Fachhochschule anfragen: [geomatik-studieren.ch](https://geomatik-studieren.ch)
 
 1. Navigieren Sie zu _Erweiterungen_ → _Erweiterungen verwalten und installieren..._
- ![Erweiterungen installieren](_includes/install_add_plugin.png)
+ ![Erweiterungen installieren](install/install_add_plugin.png)
 
 2. Es öffnet sich ein neues Fenster. Klicken Sie hier auf _Aus ZIP installieren_
-![Aus ZIP installieren](_includes/install_from_zip.png)
+![Aus ZIP installieren](./images/install/install_from_zip.png)
 
 3. Klicken Sie auf den Knopf _..._ und wählen die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_
 ![Erweiterung installieren](_includes/install_install_plugin.png)
