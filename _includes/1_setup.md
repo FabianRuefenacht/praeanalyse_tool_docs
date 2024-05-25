@@ -18,3 +18,9 @@ Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Da
 
 3. Klicken Sie auf den Knopf _..._ und wählen die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_
 ![Erweiterung installieren](install_install_plugin.png)
+
+4. Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen um _plugin_-Verzeichnis von QGIS befindet.
+5. Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ auftauchen
+![Plug-in erfolgreich installiert](<install_installed.png>)
+
+Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
