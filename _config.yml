@@ -1,6 +1,6 @@
-title: DEFVIS-Wiki
-logo: /assets/img/logo.png
-description:
+title: Präanalysetool Wiki
+logo: ./images/icon.png
+description: Benutzerhandbuch Präanalysetool (QGIS-Plug-in)
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
