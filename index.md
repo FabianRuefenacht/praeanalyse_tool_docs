@@ -39,13 +39,20 @@ _Abbildung 4: Plug-in erfolgreich installiert_
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
 ## Hilfe {#Help}
+
 Bei geöffnetem Plug-in kann jederzeit die Hilfe geöffnet werden. Klicken Sie dazu auf den Knopf unten Links im Plug-in-Fenster (Abbildung 5) oder drücken Sie die Taste _F1_.
 [![Hilfe öffnen](./images/help/help.jpg)](./images/help/help.jpg)
 _Abbildung 5: Hilfe öffnen_
 
 ## Projekt eröffnen {#openProject}
 
-In der Startmaske des Plug-ins muss ein Projekt gewählt werden. Klicken Sie auf die drei Punkte und wählen Sie einen Ordner aus. In diesem Ordner wird - falls noch nicht vorhanden - die Projektstruktur aufgebaut. Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt. Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 7 den Arbeitsablauf der Projekterstellung. Wenn Sie die PDF-Version der Anleitung verwenden, sehen Sie in Abbildung 7 die Ausgangslage der Projekterstellung.
+In der Startmaske des Plug-ins muss ein Projekt gewählt werden.
+
+- Klicken Sie auf die drei Punkte und wählen Sie einen Ordner aus.
+- In diesem Ordner wird - falls noch nicht vorhanden - die Projektstruktur aufgebaut.
+- Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt.
+
+Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 7 den Arbeitsablauf der Projekterstellung. Wenn Sie die PDF-Version der Anleitung verwenden, sehen Sie in Abbildung 7 die Ausgangslage der Projekterstellung.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/1_openProject.mp4" type="video/mp4">
@@ -54,7 +61,7 @@ Your browser does not support the video tag.
 
 _Abbildung 6: Projekt öffnen_
 
-Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Die nachfolgende Abbildung zeigt das Baumdiagramm des Projektes und den Inhalt der Ordner.
+Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Das nachfolgende Baumdiagramm zeigt die Projektstruktur im Hauptverzeichnis.
 
 | Struktur             | Beschreibung        |
 |----------------------|----------------------|
@@ -68,35 +75,59 @@ Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Die nachfolgende Abbi
 
 ## Grundlagen {#fundamental_data}
 
-Im Register Grundlagen werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zu Verfügung (konsultieren Sie Abbildung 7):
+Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zu Verfügung (konsultieren Sie Abbildung 7):
 
-- _Textfile:_ importieren Sie ihre eigenen Punkte als _.txt_-Datei. Die Datei muss durch Semikolon getrennt sein und eine Punktnummer, Ostkoordinate, Nordkoordinate und Höhe für jeden Punkt enthalten.
-- _Perimeter zeichnen:_ Der Perimeter ist die Grundlage für den bezug der öffentlichen Geodaten (Fixpunkte und Oberflächenmodell). Der Klick auf den Knopf _Perimeter zeichnen_ aktiviert das Zeichnen in der Zeichenoberfläche von QGIS. Beim ersten Klick in der Zeichenoberfläche wird die erste Ecke einer Bounding-Box aktiviert. Mit dem zweiten Klick wird die Bounding-Box abgeschlossen. Anschliessend werden die Koordinaten und die Fläche des Perimeters berechnet und unterhalb des Knopfes in der Benutzeroberfläche des Plug-ins dargestellt.
-- _Fixpunkte (©swisstopo):_ Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _Fixpunkte (©swisstopo)_ alle Fixpunkte (LFP1-3 & HFP 1-3) von swisstopo herunterladen.
-- _SwissSURFACE3D laden (©swisstopo):_ Wenn ein Perimeter definitert wurde, können Sie mit Klick auf den Knopf _SwissSURFACE3D laden (©swisstopo)_ das Oberflächenmodell der Schweiz _SwissSURFACE3D_ im definierten Perimeter laden. Beachten Sie, dass der Bezug des Oberflächenmodells je nach Ausdehnung des Perimeters und Leistungsfähigkeit Ihres Computers lange dauern kann.
-- _Import Höhenmodell (.tif):_ Mit dieser Funktion können Sie ihre eigene Rasterdatei in das Projekt laden. Beachten Sie, dass Sie nur eine Rasterdatei pro Projekt besitzen können. Die älteren Dateien werden jedes Mal überschrieben.
-- _Import Orthophoto (©swisstopo):_ Diese Funktion bezieht das Luftbild der Schweiz als WMS-Dienst. Das Luftbild kann bei der Netzdefinition und der Orientierung währed derer helfen. 
+- _Textfile:_
+  - Importieren Sie ihre eigenen Punkte als _.txt_-Datei.
+  - Die Datei muss durch Semikolon getrennt sein und eine Punktnummer, Ostkoordinate, Nordkoordinate und Höhe für jeden Punkt enthalten.
+- _Perimeter zeichnen:_
+  - Der Perimeter ist die Grundlage für den bezug der öffentlichen Geodaten (Fixpunkte und Oberflächenmodell).
+  - Der Klick auf den Knopf _Perimeter zeichnen_ aktiviert das Zeichnen in der Zeichenoberfläche von QGIS.
+  - Beim ersten Klick in der Zeichenoberfläche wird die erste Ecke einer Bounding-Box aktiviert. Mit dem zweiten Klick - wird die Bounding-Box abgeschlossen.
+  - Anschliessend werden die **Koordinaten** und die **Fläche** des Perimeters berechnet und unterhalb des Knopfes in der Benutzeroberfläche des Plug-ins dargestellt.
+- _Fixpunkte (©swisstopo):_\
+  Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _Fixpunkte (©swisstopo)_ alle Fixpunkte (LFP1-3 & HFP 1-3) von swisstopo herunterladen.
+- _SwissSURFACE3D laden (©swisstopo):_
+  - Wenn ein Perimeter definitert wurde, können Sie mit Klick auf den Knopf _SwissSURFACE3D laden (©swisstopo)_ das - Oberflächenmodell der Schweiz _SwissSURFACE3D_ im definierten Perimeter laden.
+  - **Beachten Sie**, dass der Bezug des Oberflächenmodells je nach Ausdehnung des Perimeters und Leistungsfähigkeit Ihres Computers **lange dauern** kann. Ausserdem ist das Oberflächenmodell  _SwissSURFACE3D_ zum Stand der Erstellung dieser Anleitung noch nicht flächendeckent verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [www.swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
+- _Import Höhenmodell (.tif):_
+  - Mit dieser Funktion können Sie ihre **eigene** Rasterdatei in das Projekt laden.
+  - **Beachten Sie**, dass Sie nur eine Rasterdatei pro Projekt besitzen können. Die älteren Dateien werden jedes Mal - überschrieben. Verwenden Sie **nicht** den Standard-Import von QGIS. Die Rasterdatei muss einem spezifischen Namen - folgen, um im Plug-in verwendet werden zu können.
+  - Falls Sie mehrere Rasterdateien benötigen, müssen Sie diese bei dieser Option zuerst zu einer Datei zusammenfügen. [Anleitung](https://docs.qgis.org/3.34/de/docs/user_manual/processing_algs/gdal/rastermiscellaneous.html#gdalmerge)
+- _Import Orthophoto (©swisstopo):_ Diese Funktion bezieht das Luftbild der Schweiz als WMS-Dienst. Das Luftbild kann bei der Netzdefinition und der Orientierung währed derer helfen.
 
 [![Grundlagen laden](./images/plugin/fundamental_data.png)](./images/plugin/fundamental_data.png)
 _Abbildung 7: Bezug von Grundlagedaten_
 
 ## Stochastisches Modell {#stochMod}
 
-Im Register Stoch. Modell (Stochastisches Modell) in Abbildung 8 wird das stochastische Modell der Präanalyse definiert. Für die Netzdefinition (nächstes Register) müssen Instrumente erstellt werden. Die Erstellung der Instrumente wird (in der Web-Version in Abbildung 8) demonstriert. In diesem Register stehen folgende Möglichkeiten zur Verfügung:
+Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 wird das stochastische Modell der Präanalyse definiert. Für die Netzdefinition (nächstes Register) müssen Instrumente erstellt werden. Die Erstellung der Instrumente wird (in der Web-Version in Abbildung 8) demonstriert. In diesem Register stehen folgende Möglichkeiten zur Verfügung:
 
 ### Lage und Höhe
 
-- _Instrument hinzufügen:_ Fügen Sie ein neues Instrument mit Name, Winkelgenauigkeit [mgon], Distanzgenauigkeit [mm], Distanzgenauigkeit [ppm] hinzu.
-- _Instrument bearbeiten:_ Wählen Sie in der Liste ein Instrument aus und klicken Sie auf _Instrument bearbeiten:. Sie können alle Eigenschaften des Instrumentes bearbeiten.
-- _Instrument löschen:_ Wählen Sie in der Liste ein Instrument aus und klicken Sie auf _Instrument löschen_. Das Instrument wird gelöscht. Sie müssen mindestens ein anderes Instrument in der Liste haben. Beim Löschen müssen Sie ein eratzinstrument auswählen.
-- _Default Instrumente laden:_ Mit Klick auf den Knopf _Default Instrumente laden_ werden die Instrumente der Fachhochschule Nordwestschweiz (MS60 und SX12) mit den Genauigkeiten geladen.
+- _Instrument hinzufügen:_\
+  Fügen Sie ein neues Instrument mit Name, Winkelgenauigkeit [mgon], Distanzgenauigkeit [mm], Distanzgenauigkeit [ppm] hinzu.
+- _Instrument bearbeiten:_
+  - Wählen Sie in der Liste ein Instrument aus und klicken Sie auf _Instrument bearbeiten_.
+  - Sie können alle Eigenschaften des Instrumentes bearbeiten.
+- _Instrument löschen:_
+  - Wählen Sie in der Liste ein Instrument (die ganze Zeile) aus und klicken Sie auf _Instrument löschen_.
+  - Das Instrument wird gelöscht.
+  - Sie müssen mindestens ein anderes Instrument in der Liste haben.
+  - Beim Löschen müssen Sie ein eratzinstrument auswählen.
+- _Default Instrumente laden:_\
+  Mit Klick auf den Knopf _Default Instrumente laden_ werden die Instrumente der Fachhochschule Nordwestschweiz (MS60 und SX12) mit den Genauigkeiten geladen.
+
 ### Höhe
 
 Anders als in LTOP werden die Genauigkeiten für die Höhe nicht für gegenseitige Beobachtungen, sonder für einseitige Beobachtungen eingegeben!
 
-- _Sigma Refraktion:_ Geben Sie die Genauigkeit der Refraktion ein. Diese wirkt sich auf die Genauigkeit der Höhe aus.
-- _Sigma Instrumentenhöhe [mm]:_ Geben Sie die Genauigkeit der Instrumentenhöhe ein.
-- _Sigma Signalhöhe [mm]:_ Geben Sie die Genauigkeit der Signalhöhe ein.
+- _Sigma Refraktion:_\
+  Geben Sie die Genauigkeit der Refraktion ein. Diese wirkt sich auf die Genauigkeit der Höhe aus.
+- _Sigma Instrumentenhöhe [mm]:_\
+  Geben Sie die Genauigkeit der Instrumentenhöhe ein.
+- _Sigma Signalhöhe [mm]:_\
+  Geben Sie die Genauigkeit der Signalhöhe ein.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/2_stochMod.mp4" type="video/mp4">
@@ -112,20 +143,47 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
 ### Knoten
 
 - _Knoten erfassen:_
-  - ☒ _Aus Grundlagedaten:_ Wenn die Option _Aus Grundlagedaten_ aktiviert ist, können importierte Fixpunkte verwendet werden. Klicken Sie dafür auf einen Fixpunkt. Die Punknummer, die Koordinaten und die Punkthöhe werden automatisch übernommen. Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
-  - ☐ _Aus Grundlagedaten:_ Wenn die Option _Aus Grundlagedaten_ deaktiviert ist,  können Punkte frei digitalisiert werden. Die Koordinaten werden von der Position der Maus übernommen. Die Höhe wird über eine API der swisstopo übernommen. Die Punktnummer müssen Sie selbst vergeben. Achten Sie darauf, dass jede Punktnummer nur einmal vorkommt. Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
-- _Knoten bearbeiten:_ Diese Optio erlaubt das Bearbeiten der Punkteigenschaften.
-- _Konten löschen:_ Verwenden  sie diesen Knopf, um Knoten zu löschen. Messungen und die dazugehörigen Sichtbarkeitsanalysen, welche an diesem Punkt angehängt sind, werden ebenfalls gelöscht.
-- _Punkthöhen von Raster:_ Wenn eine Rasterdatei vorhanden ist, können die Punkthöhen vom Raster abgegriffen werden.  **Achtung:** Diese Option überschreibt alle bestehenden  Punkthöhen.
+  - ☒ _Aus Grundlagedaten:_
+    - Wenn die Option _Aus Grundlagedaten_ aktiviert ist, können importierte Fixpunkte verwendet werden.
+    - Klicken Sie dafür auf einen Fixpunkt.
+    - Die Punknummer, die Koordinaten und die Punkthöhe werden automatisch übernommen.
+    - Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
+  - ☐ _Aus Grundlagedaten:_
+    - Wenn die Option _Aus Grundlagedaten_ deaktiviert ist,  können Punkte frei digitalisiert werden.
+    - Die Koordinaten werden von der Position der Maus übernommen.
+    - Die Höhe wird über eine API der swisstopo übernommen. [Link]()
+    - Die Punktnummer müssen Sie selbst vergeben. Achten Sie darauf, dass jede Punktnummer nur einmal vorkommt.
+    - Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
+- _Knoten bearbeiten:_\
+  Diese Option erlaubt das Bearbeiten der Punkteigenschaften.
+- _Konten löschen:_
+  - Verwenden  sie diesen Knopf, um Knoten zu löschen.
+  - Messungen und die dazugehörigen Sichtbarkeitsanalysen, welche an diesem Punkt angehängt sind, werden ebenfalls - gelöscht.
+- _Punkthöhen von Raster:_
+  - Wenn eine Rasterdatei vorhanden ist, können die Punkthöhen vom Raster abgegriffen werden.
+  - Bereits vorhandene Höhen werden nicht überschrieben.
+  - Punkte ausserhalb des Rasters erhalten die Höhe 0.
 
 ### Beobachtungen
 
-- _Messung erfassen:_ Erfassen Sie eine Beobachtung und führen Sie die Sichtbarkeitsanalyse (Schema der Sichtbarkeitsanalyse in Abbildung 10) durch. Wählen Sie Start und Zielpunkt der Beobachtung aus. Klicken Sie dazu auf vorher digitalisierte Netzpunkte. Anschliessend geben Sie an, welche Elemente der Beobachtung gemessen werden (Winkel, Distanz, beide). Wählen Sie, ob die Beobachtung gegenseitig oder einseitig erfolgt, wie oft die Messung getätigt wird und welches Instrument die Messungen durchführt.
-  - _Sichtbarkeitsanalyse DEM:_ Die Sichtbarkeitsanalyse wird auf dem Geländemodell durchgeführt. Dazu wird nicht das importierte Raster verwendet, sondern eine API der swisstopo. Die Erdkrümmung wird kompensiert.
-  - _Sichtbarkeitsanalyse DEM:_ Die Sichtbarkeitsanalyse wird auf dem importierten Raster durchgeführt. Die Erdkrümmung wird kompensiert.
-  - _Sichtbarkeitsanalyse keine:_ Es wird keine Sichtbarkeitsanalyse durchgeführt. (am schnellsten)
-- _Messung bearbeiten:_ bearbeiten Sie die Messanordnung, die Anzahl Messungen und das verwendete Instrument.
-- _Messung löschen:_ löschen Sie gezeichnete Messungen. Die Sichtbarkeitsanalyse wird ebenfalls gelöscht.
+**Achtung:** Definieren Sie Ihr Netz so, dass für jeden Neupunkt eine Orientierungsunbekannte geschätzt werden kann. Ansonsten werden die Resultate der Berechnung entweder nicht möglich sein oder fehler aufweisen.
+
+- _Messung erfassen:_
+  - Erfassen Sie eine Beobachtung und führen Sie die Sichtbarkeitsanalyse (Schema der Sichtbarkeitsanalyse in Abbildung 10) durch.
+  - Wählen Sie Start und Zielpunkt der Beobachtung aus. Klicken Sie dazu auf vorher digitalisierte Netzpunkte.
+  - Anschliessend geben Sie an, welche Elemente der Beobachtung gemessen werden (Winkel, Distanz, beide).
+  - Wählen Sie, ob die Beobachtung gegenseitig oder einseitig erfolgt, wie oft die Messung getätigt wird und welches Instrument die Messungen durchführt.
+  - Sichtbarkeitsanalyse
+    - _Sichtbarkeitsanalyse DEM:_\
+      Die Sichtbarkeitsanalyse wird auf dem Geländemodell durchgeführt. Dazu wird nicht das importierte Raster verwendet, sondern eine API der swisstopo. Die Erdkrümmung wird kompensiert.
+    - _Sichtbarkeitsanalyse DEM:_\
+      Die Sichtbarkeitsanalyse wird auf dem importierten Raster durchgeführt. Die Erdkrümmung wird kompensiert.
+    - _Sichtbarkeitsanalyse keine:_\
+      Es wird keine Sichtbarkeitsanalyse durchgeführt. (am schnellsten)
+- _Messung bearbeiten:_\
+  Bearbeiten Sie die Messanordnung, die Anzahl Messungen und das verwendete Instrument.
+- _Messung löschen:_\
+  Löschen Sie gezeichnete Messungen. Die Sichtbarkeitsanalyse wird ebenfalls gelöscht.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/3_NetDef.mp4" type="video/mp4">
@@ -141,3 +199,59 @@ _Abbildung 10: Schema Sichtbarkeitsanalyse_
 ## Qualität und Zuverlässigkeit {#QualRel}
 
 In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellungen bezüglich der Zuverlässigkeit und der Analyse der relativen Genauigkeit und Zuverlässigkeit machen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 11 den Arbeitsablauf im Register _Qualität / Zuverlässigkeit_. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 11 die Ausgangslage im Register _Qualität / Zuverlässigkeit_. Ihnen stehen folgende Optionen zur Verfügung:
+
+### Zuverlässigkeit
+
+- _Risiko 1. Art α:_
+  - Geben Sie das _Risiko 1. Art_ an → _wi_ wird berechnet.
+  - Alternativ können Sie _wi_ eingeben → _Risiko 1. Art_ wird berechnet.
+- _Risiko 2. Art β:_
+  - Geben Sie das _Risiko 2. Art_ an → _d_ wird berechnet.
+  - Alternativ können Sie _wd_ eingeben → _Risiko 2. Art_ wird berechnet.
+- Aus den entsprechenden Werten wird der Grenzwert für entdeckbare Fehler berechnet.
+
+### relative Genauigkeit und relative Zuverlässigkeit
+
+- _Hinzufügen:_\
+  Durch Klick auf den Knopf _Hinzufügen_ wird die Auswahl von zwei Neupunkten aktiviert. Wählen Sie diese, um zwischen den beiden Punkten die relative Genauigkeit und die relative Zuverlässigkeit zu berechnen.\
+  **wichtig:**
+  - Wählen Sie zwei **Neupunkte** aus. Die Festpunkte sind unendlich genau und haben somit keinen Einfluss auf die relative Genauigkeit oder die relative Zuverlässigkeit.
+  - Sie können nicht zweimal denselben Punkt auswählen.
+  - Jedes Punktepaar kann  nur einmal analysiert werden. Die relative Genauigkeit zwischen Punkt _A_ und Punkt _B_ ist dieselbe wie die zwischen Punkt _B_ und Punkt _A_.
+- _Entfernen:_\
+  Wählen Sie eine Konfiguration in der Liste aus und klicken Sie auf den Knopf _Entfernen_ um die relative Genauigkeit zwischen den Puntken nicht mehr zu berechnen.
+
+<video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+<source src="./videos/4_qualRel.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+_Abbildung 11: Einstellungen Qualität und Zuverlässigkeit_
+
+## Berechnung {#Calc}
+
+In der Registerkarte _Berechnung_ können Sie die Berechnung durchführen. Legen Sie dafür den Faktor für die Ellipsen fest. Dieser entscheidet, wie stark die Ellipsen für das Zeichnen in der Karte vergrössert werden. Auf die numerischen Resultate hat dies keinen Einfluss. Klicken Sie anschliessend auf die Schaltfläche _Präanalyse starten_ oder drücken Sie die Tastenkombination _STRG + R_ um die Berechnung zu starten. Mit dem Knopf _Präanalyse löschen_ können Sie die Berechnungen löschen. Die Netzdefinition und alle weiteren Einstellungen werden **nicht** gelöscht. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 12 den Arbeitsablauf im Register _Berechnung_. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 12 die Ausgangslage im Register _Berechnung_.
+
+**Achtung:** Abhängig von der Grösse des definierten Netzes und der Leistungsfähigkeit Ihres Computers kann die Berechnung der Präanalyse eine Weile dauern.
+
+<video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+<source src="./videos/5_calc.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+_Abbildung 12: Berechnung der Präanalyse_
+
+## Resultate {#Results}
+
+Nachdem Sie die Berechnung der Präanalyse durchgeführt haben, werden die Resultate direkt in die Zeichenoberfläche von QGIS geladen. Dies ist in Abbildung 12 zu sehen. Die Layer werden im Ordner _layers_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert.
+
+Die numerische Darstellung der Resultate erfolgt in einer _.HTML_-Datei. Diese wird im Ordner _Results_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert. Die _.HTML_-Datei wird in das Register _Resultate_ geladen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 13 das vollständige HTML-Dokument im register _Resultate_ und in einer Web-Anwendung. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 13 den Anfang des Berechnungsprotokolles im Register _Resultate_.
+
+**Beachten Sie** dass nebst der _.HTML_-Datei eine _.css_-Datei und eine _.png_-Datei im Verzeichnis _results_ liegen. Die _.css_-Datei ist für die Darstellung der Tabellen verantwortlich. Das Bild zeigt den die Genauigkeit und Zuverlässigkeit der Höhe in einem Diagramm.
+
+<video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+<source src="./videos/6_results.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+_Abbildung 13: Berechnung der Präanalyse_
