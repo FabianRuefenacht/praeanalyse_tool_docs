@@ -4,6 +4,7 @@ Willkommen zum Benutzerhandbuch zum QGIS-Plug-in **Präanalysetool**.
 
 Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine Präanalyse zu berechnen. Berechnen Sie die Lage- und Höhengenauigkeit, Zuverlässigkeit, sowie die relative Genauigkeit und die relative Zuverlässigkeit zwischen zwei Neupunkten. Das Plug-in ist bisher auf terrestrische Messungen und hart gelagerte Netze beschränkt.
 
+Es wird strengstens empfohlen, das digitale Handbuch zu verwenden!\
 Klicken  Sie auf die Bilder, um diese zu vergrössern!
 
 ## 1. Installationsanleitung {#install}
@@ -12,7 +13,7 @@ Das Plug-in wurde mit der QGIS-Version 3.34 (LTR) getestet. Bei Verwendung einer
 
 ### 1.1. QGIS installieren
 
-Installieren Sie die Version 3.34 (LTR) von QGIS. [Link](https://download.qgis.org/downloads/QGIS-OSGeo4W-3.34.4-1.msi)
+Installieren Sie die Version 3.34 (LTR) von QGIS. ([download.qgis.org/downloads/](https://download.qgis.org/downloads/))
 
 ### 1.2. Erweiterung installieren
 
@@ -151,7 +152,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
   - ☐ _Aus Grundlagedaten:_
     - Wenn die Option _Aus Grundlagedaten_ deaktiviert ist,  können Punkte frei digitalisiert werden.
     - Die Koordinaten werden von der Position der Maus übernommen.
-    - Die Höhe wird über eine API der swisstopo übernommen. [Link]()
+    - Die Höhe wird über eine API der swisstopo ([COGIS 2024a](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#Literature)) übernommen. 
     - Die Punktnummer müssen Sie selbst vergeben. Achten Sie darauf, dass jede Punktnummer nur einmal vorkommt.
     - Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
 - _Knoten bearbeiten:_\
@@ -175,7 +176,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
   - Wählen Sie, ob die Beobachtung gegenseitig oder einseitig erfolgt, wie oft die Messung getätigt wird und welches Instrument die Messungen durchführt.
   - Sichtbarkeitsanalyse
     - _Sichtbarkeitsanalyse DEM:_\
-      Die Sichtbarkeitsanalyse wird auf dem Geländemodell durchgeführt. Dazu wird nicht das importierte Raster verwendet, sondern eine API der swisstopo. Die Erdkrümmung wird kompensiert.
+      Die Sichtbarkeitsanalyse wird auf dem Geländemodell durchgeführt. Dazu wird nicht das importierte Raster verwendet, sondern eine API der swisstopo ([COGIS 2024b](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#Literature)). Die Erdkrümmung wird kompensiert.
     - _Sichtbarkeitsanalyse DEM:_\
       Die Sichtbarkeitsanalyse wird auf dem importierten Raster durchgeführt. Die Erdkrümmung wird kompensiert.
     - _Sichtbarkeitsanalyse keine:_\
@@ -255,3 +256,9 @@ Your browser does not support the video tag.
 </video>
 
 _Abbildung 13: Berechnung der Präanalyse_
+
+## Literatur {#Literature}
+
+COGIS (2024a): «API REST Services — GeoAdmin API 3.0 documentation. Height.» URL: [https://api3.geo.admin.ch/services/sdiservices.html#height](https://api3.geo.admin.ch/services/sdiservices.html#height) [Stand: 25.3.2024].
+
+COGIS (2024b): «API REST Services — GeoAdmin API 3.0 documentation. Profile.» URL: [https://api3.geo.admin.ch/services/sdiservices.html#profile](https://api3.geo.admin.ch/services/sdiservices.html#profile) [Stand: 29.3.2024].
