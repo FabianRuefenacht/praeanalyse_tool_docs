@@ -49,7 +49,7 @@ _Abbildung 5: Hilfe öffnen_
 
 In der Startmaske des Plug-ins muss ein Projekt gewählt werden.
 
-- Klicken Sie auf die drei Punkte und wählen Sie einen Ordner aus.
+- Klicken Sie auf die drei Punkte oder drücken Sie die Tastenkombination _STRG + O_ und wählen Sie einen Ordner aus.
 - In diesem Ordner wird - falls noch nicht vorhanden - die Projektstruktur aufgebaut.
 - Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt.
 
@@ -144,7 +144,9 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
 ### Knoten
 
 - _Knoten erfassen:_
+  - Die Option _Knoten erfassen_ kann durch Knopfdruck oder die Taste _K_ aktiviert werden.
   - ☒ _Aus Grundlagedaten:_
+    - Die Option _Aus Grundlagedaten_ kann durch Klick in das Quadrat oder durch die Taste _G_ umgeschalten werden.
     - Wenn die Option _Aus Grundlagedaten_ aktiviert ist, können importierte Fixpunkte verwendet werden.
     - Klicken Sie dafür auf einen Fixpunkt.
     - Die Punknummer, die Koordinaten und die Punkthöhe werden automatisch übernommen.
@@ -170,6 +172,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
 **Achtung:** Definieren Sie Ihr Netz so, dass für jeden Neupunkt eine Orientierungsunbekannte geschätzt werden kann. Ansonsten werden die Resultate der Berechnung entweder nicht möglich sein oder fehler aufweisen.
 
 - _Messung erfassen:_
+  - Die Option _Messung erfassen_ kann durch Klick auf den Knopf oder durch die Taste _M_ aktiviert werden.
   - Erfassen Sie eine Beobachtung und führen Sie die Sichtbarkeitsanalyse (Schema der Sichtbarkeitsanalyse in Abbildung 10) durch.
   - Wählen Sie Start und Zielpunkt der Beobachtung aus. Klicken Sie dazu auf vorher digitalisierte Netzpunkte.
   - Anschliessend geben Sie an, welche Elemente der Beobachtung gemessen werden (Winkel, Distanz, beide).
