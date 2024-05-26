@@ -22,13 +22,19 @@ Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Da
  ![Erweiterungen installieren](./images/install/install_add_plugin.png)
 _Abbildung 1: Erweiterungen installieren_
 
+### {#Abbildung2}
+
 2. Es öffnet sich ein neues Fenster. Klicken Sie hier auf _Aus ZIP installieren_
 ![Aus ZIP installieren](./images/install/install_from_zip.png)
+
+### {#Abbildung3}
 
 3. Klicken Sie auf den Knopf _..._ und wählen die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_
 ![Erweiterung installieren](./images/install/install_install_plugin.png)
 
 4. Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen um _plugin_-Verzeichnis von QGIS befindet.
+
+### {#Abbildung4}
 
 5. Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ auftauchen
 ![Plug-in erfolgreich installiert](./images/install/install_installed.png)
