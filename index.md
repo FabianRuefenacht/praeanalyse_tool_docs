@@ -2,7 +2,7 @@
 
 Willkommen zum Benutzerhandbuch zum QGIS-Plug-in **Präanalysetool**.
 
-Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine Präanalyse zu berechnen. Berechnen Sie die Lage- und Höhengenauigkeit, Zuverlässigkeit, sowie die relative Genauigkeit und die relative Zuverlässigkeit zwischen zwei Neupunkten. Das Plug-in ist bisher auf terrestrische Messungen und hart gelagerte Netze beschränkt.
+Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine Präanalyse zu berechnen. Berechnen Sie die Lage- und Höhengenauigkeit, Zuverlässigkeit sowie die relative Genauigkeit und die relative Zuverlässigkeit zwischen zwei Neupunkten. Das Plug-in ist bisher auf terrestrische Messungen und hart gelagerte Netze beschränkt.
 
 Es wird strengstens empfohlen, das digitale Handbuch zu verwenden! ([https://fabianruefenacht.github.io/praeanalyse_tool_docs/](https://fabianruefenacht.github.io/praeanalyse_tool_docs/))\
 Klicken  Sie auf die Bilder, um diese zu vergrössern!
@@ -17,40 +17,45 @@ Installieren Sie die Version 3.34 (LTR) von QGIS. ([download.qgis.org/downloads/
 
 ### 1.2. Erweiterung installieren
 
-Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Daher muss es als .zip-Datei installiert werden. Falls Sie diese Datei nicht besitzen, könne Sie diese beim Institut Geomatik der Fachhochschule anfragen: [geomatik-studieren.ch](https://geomatik-studieren.ch)
+Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Daher muss es als .zip-Datei installiert werden. Falls Sie diese Datei nicht besitzen, können Sie diese beim Institut Geomatik der Fachhochschule anfragen: [geomatik-studieren.ch](https://geomatik-studieren.ch)
 
 - Navigieren Sie zu _Erweiterungen_ → _Erweiterungen verwalten und installieren..._ (Abbildung 1)
  [![Erweiterungen installieren](./images/install/install_add_plugin.png)](./images/install/install_add_plugin.png)
-_Abbildung 1: Erweiterungen installieren_
+
+_Abbildung 1: Erweiterungen installieren._
 
 - Es öffnet sich ein neues Fenster. Klicken Sie hier auf _Aus ZIP installieren_ (Abbildung 2)
 [![Aus ZIP installieren](./images/install/install_from_zip.png)](./images/install/install_from_zip.png)
-_Abbildung 2: Aus ZIP installieren_
 
-- Klicken Sie auf den Knopf _..._ in Abbildung 3 und wählen die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_
+_Abbildung 2: Aus ZIP installieren._
+
+- Klicken Sie auf den Knopf _..._ in Abbildung 3 und wählen Sie die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_.
 [![Erweiterung installieren](./images/install/install_install_plugin.png)](./images/install/install_install_plugin.png)
-_Abbildung 3: Erweiterung auswählen und installieren_
 
-- Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen um _plugin_-Verzeichnis von QGIS befindet.
+_Abbildung 3: Erweiterung auswählen und installieren._
+
+- Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen im _plugins_-Verzeichnis von QGIS befindet.
 
 - Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ (Abbildung 4) auftauchen
 [![Plug-in erfolgreich installiert](./images/install/install_installed.png)](./images/install/install_installed.png)
-_Abbildung 4: Plug-in erfolgreich installiert_
+
+_Abbildung 4: Plug-in erfolgreich installiert._
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
 ## Hilfe {#Help}
 
-Bei geöffnetem Plug-in kann jederzeit die Hilfe geöffnet werden. Klicken Sie dazu auf den Knopf unten Links im Plug-in-Fenster (Abbildung 5) oder drücken Sie die Taste _F1_.
+Bei geöffnetem Plug-in kann jederzeit die Hilfe geöffnet werden. Klicken Sie dazu auf den Knopf unten links im Plug-in-Fenster (Abbildung 5) oder drücken Sie die Taste _F1_.
 [![Hilfe öffnen](./images/help/help.jpg)](./images/help/help.jpg)
-_Abbildung 5: Hilfe öffnen_
+
+_Abbildung 5: Hilfe öffnen._
 
 ## Projekt eröffnen {#openProject}
 
 In der Startmaske des Plug-ins muss ein Projekt gewählt werden.
 
 - Klicken Sie auf die drei Punkte oder drücken Sie die Tastenkombination _STRG + O_ und wählen Sie einen Ordner aus.
-- In diesem Ordner wird - falls noch nicht vorhanden - die Projektstruktur aufgebaut.
+- In diesem Ordner wird - falls nicht bereits vorhanden - die Projektstruktur aufgebaut.
 - Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt.
 
 Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 7 den Arbeitsablauf der Projekterstellung. Wenn Sie die PDF-Version der Anleitung verwenden, sehen Sie in Abbildung 7 die Ausgangslage der Projekterstellung.
@@ -60,14 +65,14 @@ Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 7 den A
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 6: Projekt öffnen_
+_Abbildung 6: Projekt öffnen._
 
 Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Das nachfolgende Baumdiagramm zeigt die Projektstruktur im Hauptverzeichnis.
 
 | Struktur             | Beschreibung        |
 |----------------------|----------------------|
 | 📂 **Demo**          | Hauptverzeichnis     |
-| ├── 📂 **bin**       | Ordner für Temporäre Dateien         |
+| ├── 📂 **bin**       | Ordner für temporäre Dateien         |
 | ├── 📂 **instruments** | Instrumente         |
 | ├── 📂 **layers**    | Layer-Verzeichnis    |
 | ├── 📂 **properties** | Definition der relativen Analysen       |
@@ -76,29 +81,30 @@ Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Das nachfolgende Baum
 
 ## Grundlagen {#fundamental_data}
 
-Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zu Verfügung (konsultieren Sie Abbildung 7):
+Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zur Verfügung (konsultieren Sie Abbildung 7):
 
 - _Textfile:_
   - Importieren Sie ihre eigenen Punkte als _.txt_-Datei.
   - Die Datei muss durch Semikolon getrennt sein und eine Punktnummer, Ostkoordinate, Nordkoordinate und Höhe für jeden Punkt enthalten.
 - _Perimeter zeichnen:_
-  - Der Perimeter ist die Grundlage für den bezug der öffentlichen Geodaten (Fixpunkte und Oberflächenmodell).
+  - Der Perimeter ist die Grundlage für den Bezug der öffentlichen Geodaten (Fixpunkte und Oberflächenmodell).
   - Der Klick auf den Knopf _Perimeter zeichnen_ aktiviert das Zeichnen in der Zeichenoberfläche von QGIS.
   - Beim ersten Klick in der Zeichenoberfläche wird die erste Ecke einer Bounding-Box aktiviert. Mit dem zweiten Klick - wird die Bounding-Box abgeschlossen.
   - Anschliessend werden die **Koordinaten** und die **Fläche** des Perimeters berechnet und unterhalb des Knopfes in der Benutzeroberfläche des Plug-ins dargestellt.
 - _Fixpunkte (©swisstopo):_\
   Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _Fixpunkte (©swisstopo)_ alle Fixpunkte (LFP1-3 & HFP 1-3) von swisstopo herunterladen.
 - _SwissSURFACE3D laden (©swisstopo):_
-  - Wenn ein Perimeter definitert wurde, können Sie mit Klick auf den Knopf _SwissSURFACE3D laden (©swisstopo)_ das - Oberflächenmodell der Schweiz _SwissSURFACE3D_ im definierten Perimeter laden.
-  - **Beachten Sie**, dass der Bezug des Oberflächenmodells je nach Ausdehnung des Perimeters und Leistungsfähigkeit Ihres Computers **lange dauern** kann. Ausserdem ist das Oberflächenmodell  _SwissSURFACE3D_ zum Stand der Erstellung dieser Anleitung noch nicht flächendeckent verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [www.swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
+  - Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _SwissSURFACE3D laden (©swisstopo)_ das - Oberflächenmodell der Schweiz _SwissSURFACE3D_ im definierten Perimeter laden.
+  - **Beachten Sie**, dass der Bezug des Oberflächenmodells je nach Ausdehnung des Perimeters und Leistungsfähigkeit Ihres Computers **lange dauern** kann. Ausserdem ist das Oberflächenmodell  _SwissSURFACE3D_ zum Stand der Erstellung dieser Anleitung bisher nicht flächendeckend verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [www.swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
 - _Import Höhenmodell (.tif):_
   - Mit dieser Funktion können Sie ihre **eigene** Rasterdatei in das Projekt laden.
   - **Beachten Sie**, dass Sie nur eine Rasterdatei pro Projekt besitzen können. Die älteren Dateien werden jedes Mal - überschrieben. Verwenden Sie **nicht** den Standard-Import von QGIS. Die Rasterdatei muss einem spezifischen Namen - folgen, um im Plug-in verwendet werden zu können.
   - Falls Sie mehrere Rasterdateien benötigen, müssen Sie diese bei dieser Option zuerst zu einer Datei zusammenfügen. [Anleitung](https://docs.qgis.org/3.34/de/docs/user_manual/processing_algs/gdal/rastermiscellaneous.html#gdalmerge)
-- _Import Orthophoto (©swisstopo):_ Diese Funktion bezieht das Luftbild der Schweiz als WMS-Dienst. Das Luftbild kann bei der Netzdefinition und der Orientierung währed derer helfen.
+- _Import Orthophoto (©swisstopo):_ Diese Funktion bezieht das Luftbild der Schweiz als WMS-Dienst. Das Luftbild kann bei der Netzdefinition und der Orientierung während derer helfen.
 
 [![Grundlagen laden](./images/plugin/fundamental_data.png)](./images/plugin/fundamental_data.png)
-_Abbildung 7: Bezug von Grundlagedaten_
+
+_Abbildung 7: Bezug von Grundlagedaten._
 
 ## Stochastisches Modell {#stochMod}
 
@@ -115,13 +121,13 @@ Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 wird das stoc
   - Wählen Sie in der Liste ein Instrument (die ganze Zeile) aus und klicken Sie auf _Instrument löschen_.
   - Das Instrument wird gelöscht.
   - Sie müssen mindestens ein anderes Instrument in der Liste haben.
-  - Beim Löschen müssen Sie ein eratzinstrument auswählen.
+  - Beim Löschen müssen Sie ein Ersatzinstrument auswählen.
 - _Default Instrumente laden:_\
   Mit Klick auf den Knopf _Default Instrumente laden_ werden die Instrumente der Fachhochschule Nordwestschweiz (MS60 und SX12) mit den Genauigkeiten geladen.
 
 ### Höhe
 
-Anders als in LTOP werden die Genauigkeiten für die Höhe nicht für gegenseitige Beobachtungen, sonder für einseitige Beobachtungen eingegeben!
+Anders als in LTOP werden die Genauigkeiten für die Höhe nicht für gegenseitige Beobachtungen, sondern für einseitige Beobachtungen eingegeben!
 
 - _Sigma Refraktion:_\
   Geben Sie die Genauigkeit der Refraktion ein. Diese wirkt sich auf die Genauigkeit der Höhe aus.
@@ -139,17 +145,17 @@ _Abbildung 8: Definition stochatisches Modell_
 
 ## Netzdefinition {#networkDef}
 
-In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie den Perimeter erstellt und Instrumente mit ihren Genauigkeiten definiert haben. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 9 den Arbeitsablauf der Netzdefinition. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 9 die Ausgangslage für die Netzdefinition. Für die Netzdefinition stehen Ihnen folgende Optionen zur Verfügung:
+In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie den Perimeter erstellt und Instrumente mit ihren Genauigkeiten definiert haben. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 9 den Arbeitsablauf der Netzdefinition. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 9 die Ausgangslage für die Netzdefinition. Für die Netzdefinition stehen Ihnen folgende Optionen zur Verfügung:
 
 ### Knoten
 
 - _Knoten erfassen:_
   - Die Option _Knoten erfassen_ kann durch Knopfdruck oder die Taste _K_ aktiviert werden.
   - ☒ _Aus Grundlagedaten:_
-    - Die Option _Aus Grundlagedaten_ kann durch Klick in das Quadrat oder durch die Taste _G_ umgeschalten werden.
+    - Die Option _Aus Grundlagedaten_ kann durch Klick in das Quadrat oder durch die Taste _G_ umgeschaltet werden.
     - Wenn die Option _Aus Grundlagedaten_ aktiviert ist, können importierte Fixpunkte verwendet werden.
     - Klicken Sie dafür auf einen Fixpunkt.
-    - Die Punknummer, die Koordinaten und die Punkthöhe werden automatisch übernommen.
+    - Die Punktnummer, die Koordinaten und die Punkthöhe werden automatisch übernommen.
     - Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
   - ☐ _Aus Grundlagedaten:_
     - Wenn die Option _Aus Grundlagedaten_ deaktiviert ist,  können Punkte frei digitalisiert werden.
@@ -169,7 +175,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
 
 ### Beobachtungen
 
-**Achtung:** Definieren Sie Ihr Netz so, dass für jeden Neupunkt eine Orientierungsunbekannte geschätzt werden kann. Ansonsten werden die Resultate der Berechnung entweder nicht möglich sein oder fehler aufweisen.
+**Achtung:** Definieren Sie Ihr Netz so, dass für jeden Neupunkt eine Orientierungsunbekannte geschätzt werden kann. Ansonsten werden die Resultate der Berechnung entweder nicht möglich sein oder Fehler aufweisen.
 
 - _Messung erfassen:_
   - Die Option _Messung erfassen_ kann durch Klick auf den Knopf oder durch die Taste _M_ aktiviert werden.
@@ -202,7 +208,7 @@ _Abbildung 10: Schema Sichtbarkeitsanalyse_
 
 ## Qualität und Zuverlässigkeit {#QualRel}
 
-In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellungen bezüglich der Zuverlässigkeit und der Analyse der relativen Genauigkeit und Zuverlässigkeit machen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 11 den Arbeitsablauf im Register _Qualität / Zuverlässigkeit_. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 11 die Ausgangslage im Register _Qualität / Zuverlässigkeit_. Ihnen stehen folgende Optionen zur Verfügung:
+In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellungen bezüglich der Zuverlässigkeit und der Analyse der relativen Genauigkeit und Zuverlässigkeit machen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 11 den Arbeitsablauf im Register _Qualität / Zuverlässigkeit_. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 11 die Ausgangslage im Register _Qualität / Zuverlässigkeit_. Ihnen stehen folgende Optionen zur Verfügung:
 
 ### Zuverlässigkeit
 
@@ -211,7 +217,7 @@ In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellunge
   - Alternativ können Sie _wi_ eingeben → _Risiko 1. Art_ wird berechnet.
 - _Risiko 2. Art β:_
   - Geben Sie das _Risiko 2. Art_ an → _d_ wird berechnet.
-  - Alternativ können Sie _wd_ eingeben → _Risiko 2. Art_ wird berechnet.
+  - Alternativ können Sie _d_ eingeben → _Risiko 2. Art_ wird berechnet.
 - Aus den entsprechenden Werten wird der Grenzwert für entdeckbare Fehler berechnet.
 
 ### relative Genauigkeit und relative Zuverlässigkeit
@@ -223,7 +229,7 @@ In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellunge
   - Sie können nicht zweimal denselben Punkt auswählen.
   - Jedes Punktepaar kann  nur einmal analysiert werden. Die relative Genauigkeit zwischen Punkt _A_ und Punkt _B_ ist dieselbe wie die zwischen Punkt _B_ und Punkt _A_.
 - _Entfernen:_\
-  Wählen Sie eine Konfiguration in der Liste aus und klicken Sie auf den Knopf _Entfernen_ um die relative Genauigkeit zwischen den Puntken nicht mehr zu berechnen.
+  Wählen Sie eine Konfiguration in der Liste aus und klicken Sie auf den Knopf _Entfernen_, um die relative Genauigkeit zwischen den Punkten nicht mehr zu berechnen.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/4_qualRel.mp4" type="video/mp4">
@@ -234,7 +240,7 @@ _Abbildung 11: Einstellungen Qualität und Zuverlässigkeit_
 
 ## Berechnung {#Calc}
 
-In der Registerkarte _Berechnung_ können Sie die Berechnung durchführen. Legen Sie dafür den Faktor für die Ellipsen fest. Dieser entscheidet, wie stark die Ellipsen für das Zeichnen in der Karte vergrössert werden. Auf die numerischen Resultate hat dies keinen Einfluss. Klicken Sie anschliessend auf die Schaltfläche _Präanalyse starten_ oder drücken Sie die Tastenkombination _STRG + R_ um die Berechnung zu starten. Mit dem Knopf _Präanalyse löschen_ können Sie die Berechnungen löschen. Die Netzdefinition und alle weiteren Einstellungen werden **nicht** gelöscht. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 12 den Arbeitsablauf im Register _Berechnung_. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 12 die Ausgangslage im Register _Berechnung_.
+In der Registerkarte _Berechnung_ können Sie die Berechnung durchführen. Legen Sie dafür den Faktor für die Ellipsen fest. Dieser entscheidet, wie stark die Ellipsen für das Zeichnen in der Karte vergrössert werden. Auf die numerischen Resultate hat dies keinen Einfluss. Klicken Sie anschliessend auf die Schaltfläche _Präanalyse starten_ oder drücken Sie die Tastenkombination _STRG + R_, um die Berechnung zu starten. Mit dem Knopf _Präanalyse löschen_ können Sie die Berechnungen löschen. Die Netzdefinition und alle weiteren Einstellungen werden **nicht** gelöscht. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 12 den Arbeitsablauf im Register _Berechnung_. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 12 die Ausgangslage im Register _Berechnung_.
 
 **Achtung:** Abhängig von der Grösse des definierten Netzes und der Leistungsfähigkeit Ihres Computers kann die Berechnung der Präanalyse eine Weile dauern.
 
@@ -249,9 +255,9 @@ _Abbildung 12: Berechnung der Präanalyse_
 
 Nachdem Sie die Berechnung der Präanalyse durchgeführt haben, werden die Resultate direkt in die Zeichenoberfläche von QGIS geladen. Dies ist in Abbildung 12 zu sehen. Die Layer werden im Ordner _layers_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert.
 
-Die numerische Darstellung der Resultate erfolgt in einer _.HTML_-Datei. Diese wird im Ordner _Results_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert. Die _.HTML_-Datei wird in das Register _Resultate_ geladen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 13 das vollständige HTML-Dokument im register _Resultate_ und in einer Web-Anwendung. Verwenden Sie die PDF-Verion des Benutzerhandbuches, zeigt die Abbildung 13 den Anfang des Berechnungsprotokolles im Register _Resultate_.
+Die numerische Darstellung der Resultate erfolgt in einer _.HTML_-Datei. Diese wird im Ordner _results_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert. Die _.HTML_-Datei wird in das Register _Resultate_ geladen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 13 das vollständige HTML-Dokument im Register _Resultate_ und in einer Web-Anwendung. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 13 den Anfang des Berechnungsprotokolls im Register _Resultate_.
 
-**Beachten Sie** dass nebst der _.HTML_-Datei eine _.css_-Datei und eine _.png_-Datei im Verzeichnis _results_ liegen. Die _.css_-Datei ist für die Darstellung der Tabellen verantwortlich. Das Bild zeigt den die Genauigkeit und Zuverlässigkeit der Höhe in einem Diagramm.
+**Beachten Sie**, dass nebst der _.HTML_-Datei eine _.css_-Datei und eine _.png_-Datei im Verzeichnis _results_ liegen. Die _.css_-Datei ist für die Darstellung der Tabellen verantwortlich. Das Bild zeigt den die Genauigkeit und Zuverlässigkeit der Höhe in einem Diagramm.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/6_results.mp4" type="video/mp4">
