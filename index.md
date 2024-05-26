@@ -43,14 +43,18 @@ _Abbildung 4: Plug-in erfolgreich installiert._
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
-## Hilfe {#Help}
+---
+
+## 2. Hilfe {#Help}
 
 Bei geöffnetem Plug-in kann jederzeit die Hilfe geöffnet werden. Klicken Sie dazu auf den Knopf unten links im Plug-in-Fenster (Abbildung 5) oder drücken Sie die Taste _F1_.
 [![Hilfe öffnen](./images/help/help.jpg)](./images/help/help.jpg)
 
 _Abbildung 5: Hilfe öffnen._
 
-## Projekt eröffnen {#openProject}
+---
+
+## 3. Projekt eröffnen {#openProject}
 
 In der Startmaske des Plug-ins muss ein Projekt gewählt werden.
 
@@ -79,7 +83,9 @@ Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Das nachfolgende Baum
 | ├── 📂 **raster**     | Rasterdaten         |
 | └── 📂 **results**    | Ergebnisse          |
 
-## Grundlagen {#fundamental_data}
+---
+
+## 4. Grundlagen {#fundamental_data}
 
 Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zur Verfügung (konsultieren Sie Abbildung 7):
 
@@ -106,11 +112,13 @@ Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es ste
 
 _Abbildung 7: Bezug von Grundlagedaten._
 
-## Stochastisches Modell {#stochMod}
+---
+
+## 5. Stochastisches Modell {#stochMod}
 
 Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 wird das stochastische Modell der Präanalyse definiert. Für die Netzdefinition (nächstes Register) müssen Instrumente erstellt werden. Die Erstellung der Instrumente wird (in der Web-Version in Abbildung 8) demonstriert. In diesem Register stehen folgende Möglichkeiten zur Verfügung:
 
-### Lage und Höhe
+### 5.1. Lage und Höhe
 
 - _Instrument hinzufügen:_\
   Fügen Sie ein neues Instrument mit Name, Winkelgenauigkeit [mgon], Distanzgenauigkeit [mm], Distanzgenauigkeit [ppm] hinzu.
@@ -125,7 +133,7 @@ Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 wird das stoc
 - _Default Instrumente laden:_\
   Mit Klick auf den Knopf _Default Instrumente laden_ werden die Instrumente der Fachhochschule Nordwestschweiz (MS60 und SX12) mit den Genauigkeiten geladen.
 
-### Höhe
+### 5.2. Höhe
 
 Anders als in LTOP werden die Genauigkeiten für die Höhe nicht für gegenseitige Beobachtungen, sondern für einseitige Beobachtungen eingegeben!
 
@@ -141,13 +149,15 @@ Anders als in LTOP werden die Genauigkeiten für die Höhe nicht für gegenseiti
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 8: Definition stochatisches Modell_
+_Abbildung 8: Definition stochatisches Modell._
 
-## Netzdefinition {#networkDef}
+---
+
+## 6 Netzdefinition {#networkDef}
 
 In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie den Perimeter erstellt und Instrumente mit ihren Genauigkeiten definiert haben. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 9 den Arbeitsablauf der Netzdefinition. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 9 die Ausgangslage für die Netzdefinition. Für die Netzdefinition stehen Ihnen folgende Optionen zur Verfügung:
 
-### Knoten
+### 6.1 Knoten
 
 - _Knoten erfassen:_
   - Die Option _Knoten erfassen_ kann durch Knopfdruck oder die Taste _K_ aktiviert werden.
@@ -173,7 +183,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
   - Bereits vorhandene Höhen werden nicht überschrieben.
   - Punkte ausserhalb des Rasters erhalten die Höhe 0.
 
-### Beobachtungen
+### 6.2 Beobachtungen
 
 **Achtung:** Definieren Sie Ihr Netz so, dass für jeden Neupunkt eine Orientierungsunbekannte geschätzt werden kann. Ansonsten werden die Resultate der Berechnung entweder nicht möglich sein oder Fehler aufweisen.
 
@@ -200,17 +210,19 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 9: Netzdefinition_
+_Abbildung 9: Netzdefinition._
 
 [![Schema Sichtbarkeitsanalyse](./images/visibility/schema_visibility.png)](./images/visibility/schema_visibility.png)
 
-_Abbildung 10: Schema Sichtbarkeitsanalyse_
+_Abbildung 10: Schema Sichtbarkeitsanalyse._
 
-## Qualität und Zuverlässigkeit {#QualRel}
+---
+
+## 7. Qualität und Zuverlässigkeit {#QualRel}
 
 In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellungen bezüglich der Zuverlässigkeit und der Analyse der relativen Genauigkeit und Zuverlässigkeit machen. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 11 den Arbeitsablauf im Register _Qualität / Zuverlässigkeit_. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 11 die Ausgangslage im Register _Qualität / Zuverlässigkeit_. Ihnen stehen folgende Optionen zur Verfügung:
 
-### Zuverlässigkeit
+### 7.1. Zuverlässigkeit
 
 - _Risiko 1. Art α:_
   - Geben Sie das _Risiko 1. Art_ an → _wi_ wird berechnet.
@@ -220,7 +232,7 @@ In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellunge
   - Alternativ können Sie _d_ eingeben → _Risiko 2. Art_ wird berechnet.
 - Aus den entsprechenden Werten wird der Grenzwert für entdeckbare Fehler berechnet.
 
-### relative Genauigkeit und relative Zuverlässigkeit
+### 7.2. relative Genauigkeit und relative Zuverlässigkeit
 
 - _Hinzufügen:_\
   Durch Klick auf den Knopf _Hinzufügen_ wird die Auswahl von zwei Neupunkten aktiviert. Wählen Sie diese, um zwischen den beiden Punkten die relative Genauigkeit und die relative Zuverlässigkeit zu berechnen.\
@@ -236,9 +248,11 @@ In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellunge
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 11: Einstellungen Qualität und Zuverlässigkeit_
+_Abbildung 11: Einstellungen Qualität und Zuverlässigkeit._
 
-## Berechnung {#Calc}
+---
+
+## 8. Berechnung {#Calc}
 
 In der Registerkarte _Berechnung_ können Sie die Berechnung durchführen. Legen Sie dafür den Faktor für die Ellipsen fest. Dieser entscheidet, wie stark die Ellipsen für das Zeichnen in der Karte vergrössert werden. Auf die numerischen Resultate hat dies keinen Einfluss. Klicken Sie anschliessend auf die Schaltfläche _Präanalyse starten_ oder drücken Sie die Tastenkombination _STRG + R_, um die Berechnung zu starten. Mit dem Knopf _Präanalyse löschen_ können Sie die Berechnungen löschen. Die Netzdefinition und alle weiteren Einstellungen werden **nicht** gelöscht. Wenn Sie die Web-Version des Benutzerhandbuches verwenden, zeigt die Abbildung 12 den Arbeitsablauf im Register _Berechnung_. Verwenden Sie die PDF-Version des Benutzerhandbuches, zeigt die Abbildung 12 die Ausgangslage im Register _Berechnung_.
 
@@ -249,9 +263,11 @@ In der Registerkarte _Berechnung_ können Sie die Berechnung durchführen. Legen
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 12: Berechnung der Präanalyse_
+_Abbildung 12: Berechnung der Präanalyse._
 
-## Resultate {#Results}
+---
+
+## 9. Resultate {#Results}
 
 Nachdem Sie die Berechnung der Präanalyse durchgeführt haben, werden die Resultate direkt in die Zeichenoberfläche von QGIS geladen. Dies ist in Abbildung 12 zu sehen. Die Layer werden im Ordner _layers_ (siehe [Baumstruktur](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#openProject)) gespeichert.
 
@@ -264,9 +280,11 @@ Die numerische Darstellung der Resultate erfolgt in einer _.HTML_-Datei. Diese w
 Your browser does not support the video tag.
 </video>
 
-_Abbildung 13: Berechnung der Präanalyse_
+_Abbildung 13: Berechnung der Präanalyse._
 
-## Literatur {#Literature}
+---
+
+## 10. Literatur {#Literature}
 
 COGIS (2024a): «API REST Services — GeoAdmin API 3.0 documentation. Height.» URL: [https://api3.geo.admin.ch/services/sdiservices.html#height](https://api3.geo.admin.ch/services/sdiservices.html#height) [Stand: 25.3.2024].
 
