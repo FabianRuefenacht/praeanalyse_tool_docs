@@ -7,6 +7,8 @@ Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine
 Es wird strengstens empfohlen, das digitale Handbuch zu verwenden! ([https://fabianruefenacht.github.io/praeanalyse_tool_docs/](https://fabianruefenacht.github.io/praeanalyse_tool_docs/))\
 Klicken  Sie auf die Bilder, um diese zu vergrössern!
 
+---
+
 ## 1. Installationsanleitung {#install}
 
 Das Plug-in wurde mit der QGIS-Version 3.34 (LTR) getestet. Bei Verwendung einer anderen QGIS-Version kann die Funktionstüchtigkeit nicht garantiert werden.
