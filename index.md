@@ -28,11 +28,14 @@ Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Da
 4. Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen um _plugin_-Verzeichnis von QGIS befindet.
 
 5. Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ auftauchen
-
-![Plug-in erfolgreich installiert](./images/install/install_installed.png)
+|---|
+|![Plug-in erfolgreich installiert](./images/install/install_installed.png)|
+|_Abbildung 4_|
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
 
 ## Projekt eröffnen {#openProject}
 
-mach mol
+In der Startmaske des Plug-ins muss ein Projekt gewählt werden. Klicken Sie auf die drei Punkte und wählen Sie einen Ordner aus. In diesem Ordner wird - falls noch nicht vorhanden - die Projektstruktur aufgebaut. Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt.
+
+Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Die nachfolgende Abbildung zeigt das Baumdiagramm des Projektes und den Inhalt der Ordner.
