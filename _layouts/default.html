@@ -18,7 +18,9 @@
       const screen_height = window.innerHeight;
       console.log(screen_height)
 
-      navigation_height = document.getElementById("Navigation").clientHeight;
+      const navigation_element = document.getElementById("Navigation");
+      const navigation_height = navigation_element.offsetHeight;
+      console.log(navigation_element)
       console.log("elementheight")
       console.log(navigation_height)
     </script>
