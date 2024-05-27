@@ -14,6 +14,7 @@
     {% include head-custom.html %}
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const screen_height = window.innerHeight;
@@ -39,16 +40,15 @@
             if (navigation_height + navigation_position >= footer_position) {
               console.log("ups zu gross");
 
-              // Create the new <h2> element
-              const introduction_element = document.createElement("h2");
-              introduction_element.id = "introduction";
-              introduction_element.textContent = "1. Einleitung";
+              // Find the existing <h2> element
+              const introduction_element = document.getElementById("introduction");
 
-              // Insert the new element before the navigation element
-              navigation_element.parentNode.insertBefore(introduction_element, navigation_element);
-
-              // Remove the navigation element
-              navigation_element.remove();
+              if (introduction_element) {
+                // Insert the navigation element before the <h2> element
+                introduction_element.parentNode.insertBefore(navigation_element, introduction_element);
+              } else {
+                console.error("Introduction element not found.");
+              }
             }
           } else {
             console.error("Footer element not found.");
