@@ -38,6 +38,16 @@
 
             if (navigation_height + navigation_position >= footer_position) {
               console.log("ups zu gross");
+
+              // Create the new <h2> element
+              const introduction_element = document.createElement("h2");
+              introduction_element.id = "introduction";
+              introduction_element.textContent = "1. Einleitung";
+
+              // Insert the new element before the navigation element
+              navigation_element.parentNode.insertBefore(introduction_element, navigation_element);
+
+              // Remove the navigation element
               navigation_element.remove();
             }
           } else {
@@ -85,9 +95,9 @@
         </ul>
         {% endif %}
 
-        <h2>Inhalt</h2>
-
+        
         <nav id="Navigation">
+          <h2>Inhalt</h2>
           <ul>
             <li><a href="https://fabianruefenacht.github.io/praeanalyse_tool_docs/">1. Einleitung</a></li>
             <li><a href="https://fabianruefenacht.github.io/praeanalyse_tool_docs/#install">2. Installationsanleitung</a></li>
