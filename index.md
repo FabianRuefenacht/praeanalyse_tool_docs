@@ -61,7 +61,7 @@ In der Startmaske des Plug-ins muss ein Projekt gewählt werden.
 - In diesem Ordner wird - falls nicht bereits vorhanden - die Projektstruktur aufgebaut.
 - Wenn die Projektstruktur bereits im Ordner vorhanden ist, wird diese vom Plug-in eingelesen und dargestellt.
 
-Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 7 den Arbeitsablauf der Projekterstellung. Wenn Sie die PDF-Version der Anleitung verwenden, sehen Sie in Abbildung 7 die Ausgangslage der Projekterstellung.
+Wenn Sie die Web-Version der Anleitung verwenden, sehen Sie in Abbildung 6 den Arbeitsablauf der Projekterstellung. Wenn Sie die PDF-Version der Anleitung verwenden, sehen Sie in Abbildung 6 die Ausgangslage der Projekterstellung.
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/1_openProject.mp4" type="video/mp4">
