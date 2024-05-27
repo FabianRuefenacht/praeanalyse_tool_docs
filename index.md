@@ -91,10 +91,10 @@ Die Projektstruktur setzt sich aus sechs Ordnern zusammen. Das nachfolgende Baum
 
 ## 5. Grundlagen {#fundamental_data}
 
-Im Register _Grundlagen_ werden die Grundlagedaten des Projektes bezogen. Es stehen folgende Optionen zur Verfügung (konsultieren Sie Abbildung 7):
+Im Register _Grundlagen_ werden die Grundlagedaten des Projekts bezogen. Es stehen folgende Optionen zur Verfügung (konsultieren Sie Abbildung 7):
 
 - _Textfile:_
-  - Importieren Sie ihre eigenen Punkte als _.txt_-Datei.
+  - Importieren Sie Ihre eigenen Punkte als _.txt_-Datei.
   - Die Datei muss durch Semikolon getrennt sein und eine Punktnummer, Ostkoordinate, Nordkoordinate und Höhe für jeden Punkt enthalten.
 - _Perimeter zeichnen:_
   - Der Perimeter ist die Grundlage für den Bezug der öffentlichen Geodaten (Fixpunkte und Oberflächenmodell).
@@ -120,7 +120,7 @@ _Abbildung 7: Bezug von Grundlagedaten._
 
 ## 6. Stochastisches Modell {#stochMod}
 
-Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 wird das stochastische Modell der Präanalyse definiert. Für die Netzdefinition (nächstes Register) müssen Instrumente erstellt werden. Die Erstellung der Instrumente wird (in der Web-Version in Abbildung 8) demonstriert. In diesem Register stehen folgende Möglichkeiten zur Verfügung:
+Im Register _Stoch. Modell_ (Stochastisches Modell) in Abbildung 8 werden die Genauigkeiten der Beobachtungskomponenten definiert. Für die Netzdefinition (nächstes Register) müssen Instrumente erstellt werden. Die Erstellung der Instrumente wird (in der Web-Version in Abbildung 8) demonstriert. In diesem Register stehen folgende Möglichkeiten zur Verfügung:
 
 ### 6.1. Lage und Höhe
 
@@ -179,7 +179,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
     - Wählen Sie aus, ob es sich um einen Festpunkt oder um einen Neupunkt handelt.
 - _Knoten bearbeiten:_\
   Diese Option erlaubt das Bearbeiten der Punkteigenschaften.
-- _Konten löschen:_
+- _Knoten löschen:_
   - Verwenden  sie diesen Knopf, um Knoten zu löschen.
   - Messungen und die dazugehörigen Sichtbarkeitsanalysen, welche an diesem Punkt angehängt sind, werden ebenfalls - gelöscht.
 - _Punkthöhen von Raster:_
@@ -195,7 +195,7 @@ In diesem Register wird die Netzdefinition erstellt. Voraussetzung ist, dass Sie
   - Die Option _Messung erfassen_ kann durch Klick auf den Knopf oder durch die Taste _M_ aktiviert werden.
   - Erfassen Sie eine Beobachtung und führen Sie die Sichtbarkeitsanalyse (Schema der Sichtbarkeitsanalyse in Abbildung 10) durch.
   - Wählen Sie Start und Zielpunkt der Beobachtung aus. Klicken Sie dazu auf vorher digitalisierte Netzpunkte.
-  - Anschliessend geben Sie an, welche Elemente der Beobachtung gemessen werden (Winkel, Distanz, beide).
+  - Anschliessend geben Sie an, welche Elemente der Beobachtung gemessen werden (Winkel, Distanz, Beide).
   - Wählen Sie, ob die Beobachtung gegenseitig oder einseitig erfolgt, wie oft die Messung getätigt wird und welches Instrument die Messungen durchführt.
   - Sichtbarkeitsanalyse
     - _Sichtbarkeitsanalyse DEM:_\
@@ -236,7 +236,7 @@ In der Registerkarte _Qualität / Zuverlässigkeit_ können Sie die Einstellunge
   - Alternativ können Sie _d_ eingeben → _Risiko 2. Art_ wird berechnet.
 - Aus den entsprechenden Werten wird der Grenzwert für entdeckbare Fehler berechnet.
 
-### 8.2. relative Genauigkeit und relative Zuverlässigkeit
+### 8.2. Relative Genauigkeit und relative Zuverlässigkeit
 
 - _Hinzufügen:_\
   Durch Klick auf den Knopf _Hinzufügen_ wird die Auswahl von zwei Neupunkten aktiviert. Wählen Sie diese, um zwischen den beiden Punkten die relative Genauigkeit und die relative Zuverlässigkeit zu berechnen.\
