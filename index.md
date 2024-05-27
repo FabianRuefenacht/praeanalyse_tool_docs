@@ -24,25 +24,21 @@ Installieren Sie die Version 3.34 (LTR) von QGIS. ([download.qgis.org/downloads/
 Das Plug-in wurde bisher nicht in der Plug-in-Cloud von QGIS veröffentlicht. Daher muss es als .zip-Datei installiert werden. Falls Sie diese Datei nicht besitzen, können Sie diese beim Institut Geomatik der Fachhochschule anfragen: [geomatik-studieren.ch](https://geomatik-studieren.ch)
 
 - Navigieren Sie zu _Erweiterungen_ → _Erweiterungen verwalten und installieren..._ (Abbildung 1)
- [![Erweiterungen installieren](./images/install/install_add_plugin.png)](./images/install/install_add_plugin.png)
-
+ [![Erweiterungen installieren](./images/install/install_add_plugin.png)](./images/install/install_add_plugin.png)\
 _Abbildung 1: Erweiterungen installieren._
 
 - Es öffnet sich ein neues Fenster. Klicken Sie hier auf _Aus ZIP installieren_ (Abbildung 2)
-[![Aus ZIP installieren](./images/install/install_from_zip.png)](./images/install/install_from_zip.png)
-
+[![Aus ZIP installieren](./images/install/install_from_zip.png)](./images/install/install_from_zip.png)\
 _Abbildung 2: Aus ZIP installieren._
 
 - Klicken Sie auf den Knopf _..._ in Abbildung 3 und wählen Sie die .zip-Datei aus. Klicken Sie anschliessend auf _Erweiterung installieren_.
-[![Erweiterung installieren](./images/install/install_install_plugin.png)](./images/install/install_install_plugin.png)
-
+[![Erweiterung installieren](./images/install/install_install_plugin.png)](./images/install/install_install_plugin.png)\
 _Abbildung 3: Erweiterung auswählen und installieren._
 
 - Falls eine Fehlermeldung auftaucht, prüfen Sie ob Sie die richtige Version von QGIS verwenden und ob sich nicht bereits ein Plug-in mit demselben Namen im _plugins_-Verzeichnis von QGIS befindet.
 
 - Wenn keine Fehlermeldung aufgetreten ist, sollte die Erweiterung in der _Plug-in-Leiste_ (Abbildung 4) auftauchen
-[![Plug-in erfolgreich installiert](./images/install/install_installed.png)](./images/install/install_installed.png)
-
+[![Plug-in erfolgreich installiert](./images/install/install_installed.png)](./images/install/install_installed.png)\
 _Abbildung 4: Plug-in erfolgreich installiert._
 
 Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit der Präanalyse!
@@ -52,8 +48,7 @@ Sie können die Erweiterung nun mit Klick auf das Icon starten. Viel Spass mit d
 ## 3. Hilfe {#Help}
 
 Bei geöffnetem Plug-in kann jederzeit die Hilfe geöffnet werden. Klicken Sie dazu auf den Knopf unten links im Plug-in-Fenster (Abbildung 5) oder drücken Sie die Taste _F1_.
-[![Hilfe öffnen](./images/help/help.jpg)](./images/help/help.jpg)
-
+[![Hilfe öffnen](./images/help/help.jpg)](./images/help/help.jpg)\
 _Abbildung 5: Hilfe öffnen._
 
 ---
@@ -112,8 +107,7 @@ Im Register _Grundlagen_ werden die Grundlagedaten des Projekts bezogen. Es steh
   - Falls Sie mehrere Rasterdateien benötigen, müssen Sie diese bei dieser Option zuerst zu einer Datei zusammenfügen. [Anleitung](https://docs.qgis.org/3.34/de/docs/user_manual/processing_algs/gdal/rastermiscellaneous.html#gdalmerge)
 - _Import Orthophoto (©swisstopo):_ Diese Funktion bezieht das Luftbild der Schweiz als WMS-Dienst. Das Luftbild kann bei der Netzdefinition und der Orientierung während derer helfen.
 
-[![Grundlagen laden](./images/plugin/fundamental_data.png)](./images/plugin/fundamental_data.png)
-
+[![Grundlagen laden](./images/plugin/fundamental_data.png)](./images/plugin/fundamental_data.png)\
 _Abbildung 7: Bezug von Grundlagedaten._
 
 ---
@@ -216,8 +210,7 @@ Your browser does not support the video tag.
 
 _Abbildung 9: Netzdefinition._
 
-[![Schema Sichtbarkeitsanalyse](./images/visibility/schema_visibility.png)](./images/visibility/schema_visibility.png)
-
+[![Schema Sichtbarkeitsanalyse](./images/visibility/schema_visibility.png)](./images/visibility/schema_visibility.png)\
 _Abbildung 10: Schema Sichtbarkeitsanalyse._
 
 ---
