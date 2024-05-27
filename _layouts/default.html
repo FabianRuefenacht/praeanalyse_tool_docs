@@ -31,6 +31,18 @@
         } else {
           console.error("Navigation element not found.");
         }
+
+        const footer_element = document.getElementById("footer");
+        if (footer_element) {
+          const footer_position = footer_element.getBoundingClientRect().y;
+          console.log(footer_position);
+        }
+
+        if (navigation_position && navigation_height && footer_position) {
+          if (navigation_height + navigation_position >= footer_position) {
+            navigation_element.remove();
+          }
+        }
       });
     </script>
   </head>
@@ -94,7 +106,7 @@
       {{ content }}
 
       </section>
-      <footer class="footer">
+      <footer id="footer">
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
