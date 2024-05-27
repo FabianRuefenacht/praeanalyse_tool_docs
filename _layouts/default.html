@@ -14,31 +14,22 @@
     {% include head-custom.html %}
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    
+
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const screen_height = window.innerHeight;
-        console.log(screen_height);
 
         const navigation_element = document.getElementById("Navigation");
-        console.log("element height");
-        console.log(navigation_element);
 
         if (navigation_element) {
           const navigation_height = navigation_element.getBoundingClientRect().height;
           const navigation_position = navigation_element.getBoundingClientRect().y;
-          console.log("pos");
-          console.log(navigation_position);
-          console.log(navigation_height);
 
           const footer_element = document.getElementById("footer");
           if (footer_element) {
             const footer_position = footer_element.getBoundingClientRect().y;
-            console.log("footer pos");
-            console.log(footer_position);
 
             if (navigation_height + navigation_position >= footer_position) {
-              console.log("ups zu gross");
 
               // Find the existing <h2> element
               const introduction_element = document.getElementById("introduction");
