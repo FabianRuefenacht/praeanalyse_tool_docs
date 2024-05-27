@@ -18,8 +18,9 @@
       const screen_height = window.innerHeight;
       console.log(screen_height)
 
-      navigation_element = document.getElementById("Navigation").getBoundingClientRect();
-      console.log(navigation_element.height);
+      navigation_height = document.getElementById("Navigation").clientHeight;
+      console.log("elementheight")
+      console.log(navigation_height)
     </script>
   </head>
   <body>
@@ -29,7 +30,6 @@
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
           <p>
-            Test
             Benutzerhandbuch Präanalysetool (QGIS-Plug-in).<br/>
             Diese Anleitung wurde im Rahmen der Bachelorthesis BTh03 erstellt von:<br/>
             <br/>
