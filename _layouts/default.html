@@ -22,28 +22,29 @@
         const navigation_element = document.getElementById("Navigation");
         console.log("element height");
         console.log(navigation_element);
+
         if (navigation_element) {
           const navigation_height = navigation_element.getBoundingClientRect().height;
           const navigation_position = navigation_element.getBoundingClientRect().y;
           console.log("pos");
           console.log(navigation_position);
           console.log(navigation_height);
+
+          const footer_element = document.getElementById("footer");
+          if (footer_element) {
+            const footer_position = footer_element.getBoundingClientRect().y;
+            console.log("footer pos");
+            console.log(footer_position);
+
+            if (navigation_height + navigation_position >= footer_position) {
+              console.log("ups zu gross");
+              navigation_element.remove();
+            }
+          } else {
+            console.error("Footer element not found.");
+          }
         } else {
           console.error("Navigation element not found.");
-        }
-
-        const footer_element = document.getElementById("footer");
-        if (footer_element) {
-          const footer_position = footer_element.getBoundingClientRect().y;
-          console.log("footer pos")
-          console.log(footer_position);
-        }
-
-        if (navigation_position && navigation_height && footer_position) {
-          if (navigation_height + navigation_position >= footer_position) {
-            console.log("ups zu gross")
-            navigation_element.remove();
-          }
         }
       });
     </script>
