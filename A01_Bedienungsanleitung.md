@@ -65,7 +65,7 @@ fabian.ruefenacht@students.fhnw.ch
 
 Willkommen zum Benutzerhandbuch zum QGIS-Plug-in **Präanalysetool**.
 
-Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine Präanalyse zu berechnen. Berechnen Sie die Lage- und Höhengenauigkeit, Zuverlässigkeit sowie die relative Genauigkeit und die relative Zuverlässigkeit zwischen zwei Neupunkten. Das Plug-in ist bisher auf terrestrische Messungen und hart gelagerte Netze beschränkt.
+Das Plug-in ermöglicht es, interaktiv ein geodätisches Netz zu planen und eine Präanalyse zu berechnen. Berechnen Sie die Lage- und Höhengenauigkeit, Zuverlässigkeit sowie die relative Genauigkeit und die relative Zuverlässigkeit zwischen zwei Neupunkten. Das Plug-in ist bisher auf terrestrische Messungen und gezwängt gelagerte Netze beschränkt.
 
 Es wird strengstens empfohlen, das digitale Handbuch zu verwenden! ([https://fabianruefenacht.github.io/praeanalyse_tool_docs/](https://fabianruefenacht.github.io/praeanalyse_tool_docs/))
 
