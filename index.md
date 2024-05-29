@@ -97,7 +97,8 @@ Im Register _Grundlagen_ werden die Grundlagedaten des Projekts bezogen. Es steh
   - Beim ersten Klick in der Zeichenoberfläche wird die erste Ecke einer Bounding-Box aktiviert. Mit dem zweiten Klick - wird die Bounding-Box abgeschlossen.
   - Anschliessend werden die **Koordinaten** und die **Fläche** des Perimeters berechnet und unterhalb des Knopfes in der Benutzeroberfläche des Plug-ins dargestellt.
 - _Fixpunkte (©swisstopo):_\
-  Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _Fixpunkte (©swisstopo)_ alle Fixpunkte (LFP1-3 & HFP 1-3) von swisstopo herunterladen. ([geodienste o. J.](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#Literature))
+  Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _Fixpunkte (©swisstopo)_ alle Fixpunkte (LFP1-3 & HFP 1-3) von swisstopo herunterladen. ([geodienste o. J.](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#Literature))\
+  **Achtung:** Diese Option ist noch nicht in der ganzen Schweiz verfügbar!
 - _SwissSURFACE3D laden (©swisstopo):_
   - Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf _SwissSURFACE3D laden (©swisstopo)_ das - Oberflächenmodell der Schweiz _SwissSURFACE3D_ im definierten Perimeter laden. ([swisstopo 2024](https://fabianruefenacht.github.io/praeanalyse_tool_docs/#Literature))
   - **Beachten Sie**, dass der Bezug des Oberflächenmodells je nach Ausdehnung des Perimeters und Leistungsfähigkeit Ihres Computers **lange dauern** kann. Ausserdem ist das Oberflächenmodell  _SwissSURFACE3D_ zum Stand der Erstellung dieser Anleitung bisher nicht flächendeckend verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [www.swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
