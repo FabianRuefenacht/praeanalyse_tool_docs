@@ -27,9 +27,9 @@ Der Button am unteren Rand des Plugin-Fensters schliesst das Projekt. Beim Schli
 
 ---
 
-Die folgende Abbildung 1 zeigt die Startmaske des Plugins. In **Tabelle 1** ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
+Die folgende Abbildung 1 zeigt die Startmaske des Plugins. In Tabelle 1 ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
 
-<img src="./imgs/newP/new_Project.png" width="500" />
+<img src="../imgs/newP/new_Project.png" width="500" /><br/>
 <small>_Abbildung 1: Neues Projekt erstellen._</small>
 
 
@@ -42,4 +42,5 @@ Die folgende Abbildung 1 zeigt die Startmaske des Plugins. In **Tabelle 1** ist 
 |   📁 vectorlayers | Layer der Netzkonfiguration        | Enthält sämtliche Layer, die für die Netzkonfiguration notwendig sind. |
 | 📁 raster       | Geladenes Höhenmodell              | Enthält die Rasterdaten des Höhenmodells für das Projekt.       |
 | 💾 database.sqlite | Datenbank mit Netzkonfiguration    | Die SQLite-Datenbank, die alle Netzkonfigurationsdaten speichert. |
+
 <small>_Tabelle 1: Projektverzeichnis._</small>
