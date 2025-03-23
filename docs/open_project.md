@@ -21,9 +21,9 @@ Das Plugin unterstützt eine Versionskontrolle, wodurch Sie in jedem Projekt ver
 
 ---
 
-## Projekt schließen
+## Projekt schliessen
 
-Der Button am unteren Rand des Plugin-Fensters schließt das Projekt. Beim Schließen des Projekts werden alle Daten aus der QGIS-Zeichenoberfläche entfernt, und das Plugin wird kontrolliert beendet.
+Der Button am unteren Rand des Plugin-Fensters schliesst das Projekt. Beim Schliessen des Projekts werden alle Daten aus der QGIS-Zeichenoberfläche entfernt, und das Plugin wird kontrolliert beendet.
 
 ---
 
