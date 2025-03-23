@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#projekt-erstellen-offnen" class="md-skip">
           Skip to content
         </a>
       
@@ -309,20 +309,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#projekt-wahlen-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Projekt wählen / erstellen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#version-auswahlen" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Version auswählen
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projekt-schlieen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projekt schließen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projekt schließen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle-1-ordnerstruktur-im-projektverzeichnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabelle 1: Ordnerstruktur im Projektverzeichnis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -479,21 +503,79 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">#</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
+<h1 id="projekt-erstellen-offnen">Projekt erstellen &amp; öffnen<a class="headerlink" href="#projekt-erstellen-offnen" title="Permanent link">#</a></h1>
+<p>Beim Starten des Plugins müssen Sie ein Projekt auswählen oder ein neues Projekt erstellen.</p>
+<h2 id="projekt-wahlen-erstellen">Projekt wählen / erstellen<a class="headerlink" href="#projekt-wahlen-erstellen" title="Permanent link">#</a></h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Klicken Sie auf die drei Punkte, um einen Projektordner auszuwählen.</li>
+<li>Enthält der Ordner bereits ein bestehendes Projekt, wird dieses automatisch geladen.</li>
+<li>Enthält der Ordner <strong>kein</strong> Projekt, wird die Ordnerstruktur für das Projekt erstellt.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">#</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<hr />
+<h2 id="version-auswahlen">Version auswählen<a class="headerlink" href="#version-auswahlen" title="Permanent link">#</a></h2>
+<p>Das Plugin unterstützt eine Versionskontrolle, wodurch Sie in jedem Projekt verschiedene Versionen speichern können:</p>
+<ul>
+<li>Klicken Sie auf den Button <strong>+ Version</strong>, um eine neue Version hinzuzufügen.</li>
+<li>Ein neues Fenster öffnet sich, in dem Sie der Version einen Namen geben können. Zusätzlich können Sie wählen, ob die bestehenden Einstellungen übernommen werden sollen.</li>
+<li><strong>Hinweis:</strong> <em>Diese Funktion befindet sich noch in der Entwicklung und kann zu Problemen führen!</em></li>
+<li>Nach dem Erstellen der Version können Sie sie aus dem Drop-Down-Menü neben dem Erstellungs-Button auswählen.</li>
+<li>Wenn eine Version ausgewählt wurde, werden die zugehörigen Layer in die QGIS-Zeichenfläche geladen und alle Einstellungen des Projekts werden auf die Anwendung angewendet.</li>
+</ul>
+<hr />
+<h2 id="projekt-schlieen">Projekt schließen<a class="headerlink" href="#projekt-schlieen" title="Permanent link">#</a></h2>
+<p>Der Button am unteren Rand des Plugin-Fensters schließt das Projekt. Beim Schließen des Projekts werden alle Daten aus der QGIS-Zeichenoberfläche entfernt, und das Plugin wird kontrolliert beendet.</p>
+<hr />
+<p>Die folgende <strong>Abbildung 1</strong> zeigt die Startmaske des Plugins. In <strong>Tabelle 1</strong> ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.</p>
+<p><img alt="New Project" src="../imgs/newP/new_Project.png" />
+<small><em>Abbildung 1: Neues Projekt erstellen.</em></small></p>
+<h3 id="tabelle-1-ordnerstruktur-im-projektverzeichnis">Tabelle 1: Ordnerstruktur im Projektverzeichnis<a class="headerlink" href="#tabelle-1-ordnerstruktur-im-projektverzeichnis" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Ordner / Datei</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📁 PROJECTFOLDER</td>
+<td>Hauptordner des Projektes</td>
+<td>Der übergeordnete Ordner, der alle Projektdateien enthält.</td>
+</tr>
+<tr>
+<td>📁 Version1</td>
+<td>Verzeichnis mit allen Daten der Version</td>
+<td>Enthält alle Daten und Konfigurationen für Version 1.</td>
+</tr>
+<tr>
+<td>📁 cfg</td>
+<td>Weitere Einstellungen</td>
+<td>Enthält Dateien mit weiteren Einstellungen für das Plugin. <em>Bitte nicht bearbeiten!</em></td>
+</tr>
+<tr>
+<td>📁 results</td>
+<td>Resultate der Präanalyse</td>
+<td>Enthält sämtliche Berechnungsresultate als Geopackage-Layer oder HTML-Datei. Diese Dateien können auch von anderer Software verwendet werden.</td>
+</tr>
+<tr>
+<td>📁 vectorlayers</td>
+<td>Layer der Netzkonfiguration</td>
+<td>Enthält sämtliche Layer, die für die Netzkonfiguration notwendig sind.</td>
+</tr>
+<tr>
+<td>📁 raster</td>
+<td>Geladenes Höhenmodell</td>
+<td>Enthält die Rasterdaten des Höhenmodells für das Projekt.</td>
+</tr>
+<tr>
+<td>💾 database.sqlite</td>
+<td>Datenbank mit Netzkonfiguration</td>
+<td>Die SQLite-Datenbank, die alle Netzkonfigurationsdaten speichert.</td>
+</tr>
+</tbody>
+</table>
+<p><small><em>Tabelle 1: Projektverzeichnis.</em></small></p>
 
 
 
