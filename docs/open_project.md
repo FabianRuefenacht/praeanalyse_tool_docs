@@ -14,9 +14,8 @@ Beim Starten des Plugins müssen Sie ein Projekt auswählen oder ein neues Proje
 
 Das Plugin unterstützt eine Versionskontrolle, wodurch Sie in jedem Projekt verschiedene Versionen speichern können:
 
-- Klicken Sie auf den Button **+ Version**, um eine neue Version hinzuzufügen.
-- Ein neues Fenster öffnet sich, in dem Sie der Version einen Namen geben können. Zusätzlich können Sie wählen, ob die bestehenden Einstellungen übernommen werden sollen.
-  - **Hinweis:** _Diese Funktion befindet sich noch in der Entwicklung und kann zu Problemen führen!_
+- Klicken Sie auf den Button ```+ Version```, um eine neue Version hinzuzufügen.
+- Ein neues Fenster öffnet sich, in dem Sie der Version einen Namen geben können. Zusätzlich können Sie wählen, ob die bestehenden Einstellungen übernommen werden sollen. **Hinweis:** _Diese Funktion befindet sich noch in der Entwicklung und kann zu Problemen führen!_
 - Nach dem Erstellen der Version können Sie sie aus dem Drop-Down-Menü neben dem Erstellungs-Button auswählen.
 - Wenn eine Version ausgewählt wurde, werden die zugehörigen Layer in die QGIS-Zeichenfläche geladen und alle Einstellungen des Projekts werden auf die Anwendung angewendet.
 
@@ -30,7 +29,7 @@ Der Button am unteren Rand des Plugin-Fensters schließt das Projekt. Beim Schli
 
 Die folgende **Abbildung 1** zeigt die Startmaske des Plugins. In **Tabelle 1** ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
 
-![New Project](./imgs/newP/new_Project.png)
+![New Project](./imgs/newP/new_Project.png){ width=500 }
 <small>_Abbildung 1: Neues Projekt erstellen._</small>
 
 ### Tabelle 1: Ordnerstruktur im Projektverzeichnis
@@ -44,5 +43,4 @@ Die folgende **Abbildung 1** zeigt die Startmaske des Plugins. In **Tabelle 1** 
 |   📁 vectorlayers | Layer der Netzkonfiguration        | Enthält sämtliche Layer, die für die Netzkonfiguration notwendig sind. |
 | 📁 raster       | Geladenes Höhenmodell              | Enthält die Rasterdaten des Höhenmodells für das Projekt.       |
 | 💾 database.sqlite | Datenbank mit Netzkonfiguration    | Die SQLite-Datenbank, die alle Netzkonfigurationsdaten speichert. |
-
 <small>_Tabelle 1: Projektverzeichnis._</small>
