@@ -1,6 +1,7 @@
 # Präanalysetool 2.5D
 
 ![Icon](./imgs/icon.png){ width=500 }
+<img src="./imgs/icon.png" width="500" />
 
 ## Planung und Präanalyse von geodätischen Netzen
 

@@ -29,7 +29,7 @@ Der Button am unteren Rand des Plugin-Fensters schliesst das Projekt. Beim Schli
 
 Die folgende Abbildung 1 zeigt die Startmaske des Plugins. In **Tabelle 1** ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
 
-![New Project](./imgs/newP/new_Project.png){ width=500 }
+<img src="./imgs/newP/new_Project.png" width="500" />
 <small>_Abbildung 1: Neues Projekt erstellen._</small>
 
 
