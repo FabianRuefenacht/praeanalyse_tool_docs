@@ -1,0 +1,38 @@
+site_name: "Präanalyse Tool"
+site_url: "https://fabianruefenacht.github.io/praeanalyse_tool_docs/"
+repo_url: "https://github.com/FabianRuefenacht/praeanalyse_tool_docs"
+theme:
+  name: "material"
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Projekt eröffnen: open_project.md
+  - Grundlagedaten laden: load_data.md
+  - Stochastisches Modell: stoch_mod.md
+  - Netzdefinition: network.md
+  - Qualität & Zuverlässigkeit: qual_rel.md
+  - Berechnung: calc.md
+  - Protokoll: protocol.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/FabianRuefenacht"
+
+plugins:
+  - search
