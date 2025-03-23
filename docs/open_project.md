@@ -27,12 +27,11 @@ Der Button am unteren Rand des Plugin-Fensters schließt das Projekt. Beim Schli
 
 ---
 
-Die folgende **Abbildung 1** zeigt die Startmaske des Plugins. In **Tabelle 1** ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
+Die folgende Abbildung 1 zeigt die Startmaske des Plugins. In **Tabelle 1** ist die Ordnerstruktur des gewählten Verzeichnisses schematisch dargestellt.
 
 ![New Project](./imgs/newP/new_Project.png){ width=500 }
 <small>_Abbildung 1: Neues Projekt erstellen._</small>
 
-### Tabelle 1: Ordnerstruktur im Projektverzeichnis
 
 | Symbol         | Ordner / Datei                     | Beschreibung                                                    |
 |----------------|------------------------------------|-----------------------------------------------------------------|
