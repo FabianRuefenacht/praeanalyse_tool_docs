@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#stochastisches-modell" class="md-skip">
           Skip to content
         </a>
       
@@ -351,20 +351,89 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#totalstationen" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Totalstationen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#nivelliergerat" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Nivelliergerät
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnss" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNSS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vermessungskreisel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vermessungskreisel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weitere-einstellungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weitere Einstellungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weitere Einstellungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zentrierung-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      σ Zentrierung (mm)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refraktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      σ Refraktion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrumentenhohe-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      σ Instrumentenhöhe (mm)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalhohe-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      σ Signalhöhe (mm)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -479,21 +548,47 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">#</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
+<h1 id="stochastisches-modell">Stochastisches Modell<a class="headerlink" href="#stochastisches-modell" title="Permanent link">#</a></h1>
+<p>Im Reiter <code>stoch. Modell</code> (Abbildung 1) werden die Instrumente und die Instrumentenunabhängigen Genauigkeiten definiert. Dieser Reiter erlaubt die Erstellung, Bearbeitung und das Löschen von Totalstationen, GNSS, Nivelliergeräten und Vermessungskreiseln. <strong>Beachte:</strong> bisher können nur Messungen von Totalstationen verarbeitet werden.</p>
+<p><img src="../imgs/stoch/stochmod.png" width="500" /><br/>
+<small><em>Abbildung 1: Register Stoch. Modell.</em></small></p>
+<h2 id="totalstationen">Totalstationen<a class="headerlink" href="#totalstationen" title="Permanent link">#</a></h2>
+<p>Der Knopf <code>Totalstation hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
+<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
+<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">#</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="nivelliergerat">Nivelliergerät<a class="headerlink" href="#nivelliergerat" title="Permanent link">#</a></h2>
+<p>Der Knopf <code>Nivelliergerät hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
+<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
+<ul>
+<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
+<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
+</ul>
+<h2 id="gnss">GNSS<a class="headerlink" href="#gnss" title="Permanent link">#</a></h2>
+<p>Der Knopf <code>GNSS hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
+<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
+<ul>
+<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
+<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
+</ul>
+<h2 id="vermessungskreisel">Vermessungskreisel<a class="headerlink" href="#vermessungskreisel" title="Permanent link">#</a></h2>
+<p>Der Knopf <code>Vermessungskreisel hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
+<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
+<ul>
+<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
+<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
+</ul>
+<h2 id="weitere-einstellungen">Weitere Einstellungen<a class="headerlink" href="#weitere-einstellungen" title="Permanent link">#</a></h2>
+<h3 id="zentrierung-mm">σ Zentrierung (mm)<a class="headerlink" href="#zentrierung-mm" title="Permanent link">#</a></h3>
+<p>Hat derzeit keine Einwirkungen. Wird voraussichtlich im nächsten Release hinzugefügt.</p>
+<h3 id="refraktion">σ Refraktion<a class="headerlink" href="#refraktion" title="Permanent link">#</a></h3>
+<p>Standardabweichung der Refraktion. Standardwert = 0.06</p>
+<h3 id="instrumentenhohe-mm">σ Instrumentenhöhe (mm)<a class="headerlink" href="#instrumentenhohe-mm" title="Permanent link">#</a></h3>
+<p>Standardabweichung der Instrumentenhöhenbestimmung. Standardwert = 1 mm</p>
+<h3 id="signalhohe-mm">σ Signalhöhe (mm)<a class="headerlink" href="#signalhohe-mm" title="Permanent link">#</a></h3>
+<p>Standardabweichung der Signalhöhenbestimmung. Standardwert = 1 mm</p>
 
 
 

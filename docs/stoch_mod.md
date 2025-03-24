@@ -1,17 +1,60 @@
-# Welcome to MkDocs
+# Stochastisches Modell
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Im Reiter ```stoch. Modell``` (Abbildung 1) werden die Instrumente und die Instrumentenunabhängigen Genauigkeiten definiert. Dieser Reiter erlaubt die Erstellung, Bearbeitung und das Löschen von Totalstationen, GNSS, Nivelliergeräten und Vermessungskreiseln. **Beachte:** bisher können nur Messungen von Totalstationen verarbeitet werden.
 
-## Commands
+<img src="../imgs/stoch/stochmod.png" width="500" /><br/>
+<small>_Abbildung 1: Register Stoch. Modell._</small>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Totalstationen
 
-## Project layout
+Der Knopf ```Totalstation hinzufügen``` öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:
+
+- bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen
+- löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank
+
+## Nivelliergerät
+
+Der Knopf ```Nivelliergerät hinzufügen``` öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.
+
+Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:
+
+- bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen
+- löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank
+
+## GNSS
+
+Der Knopf ```GNSS hinzufügen``` öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.
+
+Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:
+
+- bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen
+- löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank
+
+## Vermessungskreisel
+
+Der Knopf ```Vermessungskreisel hinzufügen``` öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.
+
+Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:
+
+- bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen
+- löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank
+
+## Weitere Einstellungen
+
+### σ Zentrierung (mm)
+
+Hat derzeit keine Einwirkungen. Wird voraussichtlich im nächsten Release hinzugefügt.
+
+### σ Refraktion
+
+Standardabweichung der Refraktion. Standardwert = 0.06
+
+### σ Instrumentenhöhe (mm)
+
+Standardabweichung der Instrumentenhöhenbestimmung. Standardwert = 1 mm
+
+### σ Signalhöhe (mm)
+
+Standardabweichung der Signalhöhenbestimmung. Standardwert = 1 mm
