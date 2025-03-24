@@ -4,7 +4,7 @@ Das Plug-in wurde mit der QGIS-Version 3.34 (LTR) getestet. Bei Verwendung einer
 
 ## QGIS installieren
 
-Installieren Sie die Version 3.34 (LTR) von QGIS. ([download.qgis.org/downloads/](https://download.qgis.org/downloads/))
+Installieren Sie die Version **3.34.10** (LTR) von QGIS. ([download.qgis.org/downloads/](https://download.qgis.org/downloads/))
 
 ## Plugin installieren
 
