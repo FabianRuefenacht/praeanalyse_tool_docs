@@ -26,7 +26,7 @@ Der Datensatz muss folgendes Format haben:
 Der Perimeter bildet die Grundlage für den Bezug öffentlicher Geodaten (Fixpunkte und Oberflächenmodell).
 
 - Klicken Sie auf den Knopf ```Perimeter zeichnen```, um die Zeichenfunktion in QGIS zu aktivieren.
-- Der erste Klick in die Zeichenoberfläche setzt die erste Ecke der Bounding-Box. Der zweite Klick schließt die Bounding-Box.
+- Der erste Klick in die Zeichenoberfläche setzt die erste Ecke der Bounding-Box. Der zweite Klick schliesst die Bounding-Box.
 - Während des Zeichnens wird eine provisorische Bounding-Box als **RubberBand** angezeigt.
 - Nach Abschluss des Zeichnens werden die Koordinaten und die Fläche des Perimeters berechnet und in der Plugin-Oberfläche unterhalb des Knopfes angezeigt.
 
@@ -45,7 +45,7 @@ Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf ```Fixpu
 Das Höhenmodell kann für die Sichtbarkeitsanalyse verwendet werden. **Hinweis:** Es kann nur ein Höhenmodell geladen werden.
 
 - Wenn ein Perimeter definiert wurde, können Sie mit Klick auf den Knopf ```SwissSURFACE3D laden (©swisstopo)``` das Oberflächenmodell der Schweiz innerhalb des definierten Perimeters laden. [(swisstopo 2024)](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster)
-- **Wichtig:** Der Download kann je nach Perimetergröße und Systemleistung lange dauern. Zudem ist SwissSURFACE3D aktuell nicht flächendeckend verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
+- **Wichtig:** Der Download kann je nach Perimetergrösse und Systemleistung lange dauern. Zudem ist SwissSURFACE3D aktuell nicht flächendeckend verfügbar. Falls kein Raster geladen wird, prüfen Sie die Verfügbarkeit hier: [swisstopo.admin.ch](https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d-raster).
 
 ---
 

@@ -14,6 +14,8 @@
         <link rel="prev" href="../calc/">
       
       
+        <link rel="next" href="../bug/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#resultate" class="md-skip">
           Skip to content
         </a>
       
@@ -433,18 +435,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#protokoll" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Protokoll
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#qgis-zeichenoberflache" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      QGIS-Zeichenoberfläche
     </span>
   </a>
   
@@ -454,6 +456,27 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fehler melden
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -477,21 +500,26 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">#</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
+<h1 id="resultate">Resultate<a class="headerlink" href="#resultate" title="Permanent link">#</a></h1>
+<p>Die Resultate werden sowohl im Reiter <code>Resultate</code> als auch in der QGIS-Zeichenoberfläche dargestellt. Die Abbildung 1 zeigt das Register <code>Resultate</code>.</p>
+<p><img src="../imgs//res/result.png" width="500" /><br/>
+<small><em>Abbildung 1: Register Resultate.</em></small></p>
+<h2 id="protokoll">Protokoll<a class="headerlink" href="#protokoll" title="Permanent link">#</a></h2>
+<p>Das letzte Register <code>Resultate</code> stellt das Protokoll dar, das im Ordner <code>projectname/version/results/</code> als HTML-Datei gespeichert ist.</p>
+<p>Da die Darstellung im Plugin technisch bedingt nicht optimal ist, wird empfohlen, die genaue Beurteilung des Netzes im bevorzugten Webbrowser durchzuführen.</p>
+<p>Das Protokoll ist wie folgt gegliedert:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Genauigkeit und Zuverlässigkeit der Neupunkte:</strong> Auflistung aller Neupunkte mit Angaben zur Genauigkeit und Zuverlässigkeit in Lage und Höhe.</li>
+<li><strong>Relative Genauigkeit und Zuverlässigkeit:</strong> Auflistung der Ergebnisse der relativen Konfigurationen.</li>
+<li><strong>Genauigkeit der Punkthöhen:</strong> Darstellung der Punkthöhen mit Standardabweichungen und äusserer Zuverlässigkeit.</li>
+<li><strong>Beobachtungen Lage:</strong> Tabelle mit allen Beobachtungen zur Lagebestimmung. Pro Beobachtung werden folgende Attribute aufgeführt:<br />
+<code>Messwert; Start; End; Messart; Messwert; Standardabweichung; Gewicht; lokale Zuverlässigkeit; innere Zuverlässigkeit</code>.</li>
+<li><strong>Beobachtungen Höhe:</strong> Tabelle mit allen Beobachtungen zur Höhenbestimmung. Pro Beobachtung werden folgende Attribute aufgeführt:<br />
+<code>Messwert; Start; End; Messart; Messwert; Standardabweichung; Gewicht; lokale Zuverlässigkeit; innere Zuverlässigkeit</code>.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">#</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="qgis-zeichenoberflache">QGIS-Zeichenoberfläche<a class="headerlink" href="#qgis-zeichenoberflache" title="Permanent link">#</a></h2>
+<p>Zusätzlich zum Protokoll werden in der QGIS-Zeichenoberfläche die relativen und absoluten mittleren Konfidenzellipsen sowie die relativen und absoluten äusseren Zuverlässigkeitsrechtecke dargestellt.</p>
+<p><strong>Hinweis:</strong> Im nächsten Release sollen Filterfunktionen für die Netzbeurteilung hinzugefügt werden, um die Auswertung weiter zu vereinfachen.</p>
 
 
 

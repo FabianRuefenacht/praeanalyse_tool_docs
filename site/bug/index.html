@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://fabianruefenacht.github.io/praeanalyse_tool_docs/stoch_mod/">
+        <link rel="canonical" href="https://fabianruefenacht.github.io/praeanalyse_tool_docs/bug/">
       
       
-        <link rel="prev" href="../load_data/">
+        <link rel="prev" href="../protocol/">
       
-      
-        <link rel="next" href="../network/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Stochastisches Modell - Präanalyse Tool</title>
+        <title>Fehler melden - Präanalyse Tool</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stochastisches-modell" class="md-skip">
+        <a href="#bug-report" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stochastisches Modell
+              Fehler melden
             
           </span>
         </div>
@@ -300,31 +298,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Stochastisches Modell
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../stoch_mod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -334,113 +311,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#totalstationen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Totalstationen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nivelliergerat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nivelliergerät
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gnss" class="md-nav__link">
-    <span class="md-ellipsis">
-      GNSS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vermessungskreisel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vermessungskreisel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weitere-einstellungen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weitere Einstellungen
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Weitere Einstellungen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zentrierung-mm" class="md-nav__link">
-    <span class="md-ellipsis">
-      σ Zentrierung (mm)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#refraktion" class="md-nav__link">
-    <span class="md-ellipsis">
-      σ Refraktion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instrumentenhohe-mm" class="md-nav__link">
-    <span class="md-ellipsis">
-      σ Instrumentenhöhe (mm)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalhohe-mm" class="md-nav__link">
-    <span class="md-ellipsis">
-      σ Signalhöhe (mm)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -533,10 +403,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../bug/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -546,6 +425,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -569,47 +449,28 @@
   
 
 
-<h1 id="stochastisches-modell">Stochastisches Modell<a class="headerlink" href="#stochastisches-modell" title="Permanent link">#</a></h1>
-<p>Im Reiter <code>stoch. Modell</code> (Abbildung 1) werden die Instrumente und die Instrumentenunabhängigen Genauigkeiten definiert. Dieser Reiter erlaubt die Erstellung, Bearbeitung und das Löschen von Totalstationen, GNSS, Nivelliergeräten und Vermessungskreiseln. <strong>Beachte:</strong> bisher können nur Messungen von Totalstationen verarbeitet werden.</p>
-<p><img src="../imgs/stoch/stochmod.png" width="500" /><br/>
-<small><em>Abbildung 1: Register Stoch. Modell.</em></small></p>
-<h2 id="totalstationen">Totalstationen<a class="headerlink" href="#totalstationen" title="Permanent link">#</a></h2>
-<p>Der Knopf <code>Totalstation hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
-<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
-<ul>
-<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
-<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
-</ul>
-<h2 id="nivelliergerat">Nivelliergerät<a class="headerlink" href="#nivelliergerat" title="Permanent link">#</a></h2>
-<p>Der Knopf <code>Nivelliergerät hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
-<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
-<ul>
-<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
-<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
-</ul>
-<h2 id="gnss">GNSS<a class="headerlink" href="#gnss" title="Permanent link">#</a></h2>
-<p>Der Knopf <code>GNSS hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
-<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
-<ul>
-<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
-<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
-</ul>
-<h2 id="vermessungskreisel">Vermessungskreisel<a class="headerlink" href="#vermessungskreisel" title="Permanent link">#</a></h2>
-<p>Der Knopf <code>Vermessungskreisel hinzufügen</code> öffnet ein neues Fenster, in welchem der Name des Instrumentes und die stochastischen Eigenschaften dessen eingegeben werden können. Nach der Bestätigung wird das Instrument der unter dem Knopf stehenden Liste hinzugefügt.</p>
-<p>Rechtsklick auf ein Instrument in der Liste öffnet ein Kontextmenü, welches folgende Optionen bietet:</p>
-<ul>
-<li>bearbeiten eines Instruments: Name und stochastische Eigenschaften anpassen</li>
-<li>löschen eines Instruments: Entfernt das Instrument aus der Auswahl und aus der Datenbank</li>
-</ul>
-<h2 id="weitere-einstellungen">Weitere Einstellungen<a class="headerlink" href="#weitere-einstellungen" title="Permanent link">#</a></h2>
-<h3 id="zentrierung-mm">σ Zentrierung (mm)<a class="headerlink" href="#zentrierung-mm" title="Permanent link">#</a></h3>
-<p>Hat derzeit keine Einwirkungen. Wird voraussichtlich im nächsten Release hinzugefügt.</p>
-<h3 id="refraktion">σ Refraktion<a class="headerlink" href="#refraktion" title="Permanent link">#</a></h3>
-<p>Standardabweichung der Refraktion. Standardwert = 0.06</p>
-<h3 id="instrumentenhohe-mm">σ Instrumentenhöhe (mm)<a class="headerlink" href="#instrumentenhohe-mm" title="Permanent link">#</a></h3>
-<p>Standardabweichung der Instrumentenhöhenbestimmung. Standardwert = 1 mm</p>
-<h3 id="signalhohe-mm">σ Signalhöhe (mm)<a class="headerlink" href="#signalhohe-mm" title="Permanent link">#</a></h3>
-<p>Standardabweichung der Signalhöhenbestimmung. Standardwert = 1 mm</p>
+<h1 id="bug-report">Bug-Report<a class="headerlink" href="#bug-report" title="Permanent link">#</a></h1>
+<p>Haben Sie einen Fehler bemerkt? Haben Sie Fragen zur Implementierung? Stürzt das Plugin ab oder verhält es sich unerwartet?</p>
+<p>Bei der Entwicklung eines solchen Plugins gibt es zahlreiche potenzielle Fehlerquellen. Daher bin ich für jede Rückmeldung dankbar. Bitte erfassen Sie einen möglichst detaillierten und aussagekräftigen Issue auf GitHub. So funktioniert es:</p>
+<ol>
+<li><strong>Navigieren Sie zum GitHub-Repository dieser Dokumentation:</strong><br />
+<a href="https://github.com/FabianRuefenacht/praeanalyse_tool_docs">GitHub-Repository</a></li>
+<li><strong>Erstellen Sie einen neuen Issue:</strong><br />
+    Klicken Sie auf <code>Issues</code> und anschließend auf <code>New issue</code> (siehe Abbildung 1).</li>
+<li><strong>Beschreiben Sie den Fehler ausführlich:</strong><br />
+    Geben Sie einen prägnanten Titel an.<br />
+    Beschreiben Sie genau, unter welchen Umständen der Fehler auftritt.<br />
+    Falls möglich, hängen Sie Ihr Projekt als <code>zip-Datei</code> an (siehe Abbildung 2).</li>
+<li><strong>Erstellen Sie den Issue:</strong><br />
+    Klicken Sie auf <code>Create issue</code> (siehe Abbildung 2).</li>
+<li><strong>Ich werde den Fehler prüfen und mich gegebenenfalls mit einer Rückmeldung bei Ihnen melden.</strong></li>
+</ol>
+<hr />
+<p><img src="../imgs/bugreport/waytobugreport.png" width="500" /><br/>
+<small><em>Abbildung 1: So melden Sie einen Bug.</em></small></p>
+<hr />
+<p><img src="../imgs/bugreport/report.png" width="500" /><br/>
+<small><em>Abbildung 2: So beschreiben Sie einen Bug richtig.</em></small></p>
 
 
 

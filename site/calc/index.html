@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#berechnung" class="md-skip">
           Skip to content
         </a>
       
@@ -414,18 +414,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#praanalyse-starten" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
+      Präanalyse starten
     </span>
   </a>
   
@@ -460,6 +451,27 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fehler melden
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -479,21 +491,17 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">#</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
+<h1 id="berechnung">Berechnung<a class="headerlink" href="#berechnung" title="Permanent link">#</a></h1>
+<p>Im Register <code>Berechnung</code> wird die Berechnung gestartet. Es gibt nur eine Einstellung, die hier vorgenommen werden muss:</p>
+<p><img src="../imgs/calc/calc.png" width="500" /><br/>
+<small><em>Abbildung 1: Register Berechnung.</em></small></p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Faktor der Ellipsen:</strong> Dieser beschreibt, wie stark die Ellipsen skaliert werden sollen, bevor sie in die Zeichnung geladen werden. Diese Einstellung beeinflusst nicht die numerischen Ergebnisse, sondern lediglich deren Darstellung.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">#</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="praanalyse-starten">Präanalyse starten<a class="headerlink" href="#praanalyse-starten" title="Permanent link">#</a></h2>
+<p>Mit Klick auf den Knopf <code>Präanalyse starten</code> wird die Berechnung durchgeführt. Die Präanalyse erfolgt getrennt für Lage und Höhe. </p>
+<p>Bevor die Berechnung gestartet wird, prüft das Programm die Netzkonfiguration. Falls Fehler vorliegen, werden diese in einem Pop-up-Fenster angezeigt. Nach der Validierung der allgemeinen Netzgeometrie erfolgt eine spezifische Validierung für die Lageausgleichung. Ein Fehler in dieser Prüfung führt nicht zwingend zum Abbruch der Berechnung, da möglicherweise die Höhenberechnung dennoch durchgeführt werden kann. Anschliessend wird die Netzgeometrie für die Höhenberechnung geprüft. Auch hier gilt: Falls Fehler auftreten, werden diese als Pop-up angezeigt, und die Lageberechnung kann gegebenenfalls trotzdem erfolgen.</p>
+<p>Nach erfolgreichem Abschluss der Berechnungen erscheint eine Meldung, die den Erfolg bestätigt. Die Resultate werden nun im Plugin im Register <code>Resultate</code> sowie in der QGIS-Zeichenoberfläche als Layer dargestellt. Zudem ist das Berechnungsprotokoll als HTML-Datei im Ordner <code>results</code> gespeichert, wie im Abschnitt <a href="../open_project">Projekt eröffnen</a> beschrieben.</p>
 
 
 

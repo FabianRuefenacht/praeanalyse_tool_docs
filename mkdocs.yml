@@ -28,6 +28,7 @@ nav:
   - Qualität & Zuverlässigkeit: qual_rel.md
   - Berechnung: calc.md
   - Protokoll: protocol.md
+  - Fehler melden: bug.md
 
 extra:
   social:
