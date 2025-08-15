@@ -19,6 +19,14 @@ Das vorliegende Dokument erläutert das QGIS-Plugin _Präanalysetool_.
 
 Sämtliche Veränderungen werden unter den entsprechenden Versionen aufgelistet. Die oberste Version ist die neueste.
 
+### v0.1.1-beta
+
+| Änderung | Bezeichnung | Bemerkung |
+|---|---|---|
+| **NEU** | Export Netzkonfiguration in LTOP-Formate | Unterstützt den Export von .KOO & .MES Files |
+| **NEU** | Netzkonfiguration GNSS | GNSS-Messungen können nun in die Netzkonfiguration übernommen werden. Wird bei Berechnung nicht berücksichtigt. |
+
+
 ### v0.1.0-beta
 
 | Änderung | Bezeichnung | Bemerkung |
