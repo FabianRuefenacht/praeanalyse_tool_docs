@@ -52,3 +52,4 @@ Sämtliche Veränderungen werden unter den entsprechenden Versionen aufgelistet.
 | **NEU** | Berechnung relativer Genauigkeits- und Zuverlässigkeitsindikatoren |
 | **NEU** | Erstellung Berechnungsprotokoll |
 | **NEU** | Darstellung der Resultate in der QGIS-Zeichnung |
+
