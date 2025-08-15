@@ -8,8 +8,8 @@
 |---|---|
 | **Erstellt von:** | Fabian Rüfenacht |
 | **Erstellt am:** | 27. Mai 2024 |
-| **Version:** | v0.1.0-beta |
-| **Letzte Überarbeitung:** | 24. März 2025 |
+| **Version:** | v0.1.1-beta |
+| **Letzte Überarbeitung:** | 15. August 2025 |
 
 Das vorliegende Dokument erläutert das QGIS-Plugin _Präanalysetool_.
 
