@@ -89,7 +89,36 @@ Ein Klick auf den Knopf ```TS-Beobachtungen löschen``` aktiviert das Löschen v
 
 ## GNSS-Beobachtungen
 
-Die Knöpfe in diesem Bereich haben derzeit keine Funktion.
+In diesem Abschnitt des Registers ```Netzdefinition``` können GNSS-Beobachtungen oder ähnliche Messungen erstellt, bearbeitet und gelöscht werden.
+
+### GNSS-Beobachtungen erfassen
+
+Ein Klick auf den Knopf ```GNSS-Beobachtungen erfassen``` aktiviert das Digitalisieren von GNSS-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie den Punkt der Beobachtung aus dem Layer ```reference_points```.
+- Es erscheint ein Pop-up zur Konfiguration der Beobachtung.
+- Nach der Bestätigung wird die Beobachtung in der QGIS-Zeichenoberfläche dargestellt.
+
+*Konfiguration der GNSS-Beobachtungen:* Bei der Erfassung von GNSS-Beobachtungen (siehe Abb. 2) können Sie sämtliche Sessionen direkt in einer Maske erfassen. Klicken Sie hierzu auf den Button ```Zeile hinzufügen``` und wählen Sie aus dem Dropdown in der rechten Spalte das Instrument/die Session aus. Fehlerhaft erfasste Sessionen können über den Button ```Zeile löschen``` entfernt werden.
+
+<img src="../imgs/network/GNSS-Obs.png" width="500" /><br/>
+<small>_Abbildung 2: Erfassen einer GNSS-Beobachtung._</small>
+
+### GNSS-Beobachtungen bearbeiten
+
+Ein Klick auf den Knopf ```GNSS-Beobachtungen bearbeiten``` aktiviert die Bearbeitung von GNSS-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie eine Beobachtung aus dem Layer ```gnss_observations```.
+- Es erscheint ein Pop-up zur Konfiguration der Beobachtung.
+- Nach der Bestätigung wird die Beobachtung in der QGIS-Zeichenoberfläche aktualisiert.
+
+### GNSS-Beobachtungen löschen
+
+Ein Klick auf den Knopf ```GNSS-Beobachtungen löschen``` aktiviert das Löschen von GNSS-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie eine Beobachtung aus dem Layer ```gnss_observations```.
+- Es erscheint ein Pop-up zur Bestätigung der Löschung.
+- Nach der Bestätigung wird die Beobachtung entfernt.
 
 ---
 
