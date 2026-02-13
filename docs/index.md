@@ -25,7 +25,7 @@ Sämtliche Veränderungen werden unter den entsprechenden Versionen aufgelistet.
 | **NEU** | Netzkonfiguration Nivellement | Nivellement-Messungen können nun in die Netzkonfiguration übernommen werden. Werden bei der Berechnung nucht berücksichtigt. |
 | **NEU** | Netzkonfiguration Vermessungskreisel | Kreisel-Messungen können nun in die Netzkonfiguration übernommen werden. Werden bei der Berechnung nucht berücksichtigt. |
 | **NEU** | Sichtbarkeitsanalyse GNSS | Bei der Planung von GNSS-Messungen kann nun ein Skyplot der Umgebung erstellt werden. |
-| **Änderung** | QGIS Version | Das Plugin wurde Qt6-ready gemacht. Ab dieser Version benötigen Sie eine Qt6-fähige QGIS-Version. |
+| **ÄNDERUNG** | QGIS Version | Das Plugin wurde Qt6-ready gemacht. Ab dieser Version benötigen Sie eine Qt6-fähige QGIS-Version. |
 
 
 ### v0.1.1-beta

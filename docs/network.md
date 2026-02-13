@@ -97,9 +97,12 @@ Ein Klick auf den Knopf ```GNSS-Beobachtungen erfassen``` aktiviert das Digitali
 
 - Selektieren Sie den Punkt der Beobachtung aus dem Layer ```reference_points```.
 - Es erscheint ein Pop-up zur Konfiguration der Beobachtung.
+- Hier können Sie auch einen Skyplot erstellen.
 - Nach der Bestätigung wird die Beobachtung in der QGIS-Zeichenoberfläche dargestellt.
 
-*Konfiguration der GNSS-Beobachtungen:* Bei der Erfassung von GNSS-Beobachtungen (siehe Abb. 2) können Sie sämtliche Sessionen direkt in einer Maske erfassen. Klicken Sie hierzu auf den Button ```Zeile hinzufügen``` und wählen Sie aus dem Dropdown in der rechten Spalte das Instrument/die Session aus. Fehlerhaft erfasste Sessionen können über den Button ```Zeile löschen``` entfernt werden.
+*Konfiguration der GNSS-Beobachtungen:* Bei der Erfassung von GNSS-Beobachtungen (siehe Abb. 2) können Sie sämtliche Sessionen direkt in einer Maske erfassen. Klicken Sie hierzu auf den Button ```Zeile hinzufügen``` und wählen Sie aus dem Dropdown in der rechten Spalte das Instrument/die Session aus. Fehlerhaft erfasste Sessionen können über den Button ```Zeile löschen``` entfernt werden. Um den Dialog zu bestätigen müssen Sie mindestens eine Session definiert haben.
+
+*GNSS-Messplanung durchführen:* Seit Version v0.2.0 wird die Grobplanung (Erstellung von Skyplots) für GNSS-Messungen unterstützt. Voraussetzung dafür ist, dass ein Oberflächenmodell als Raster geladen wurde. Wählen Sie für die Erstellung des Skyplots die Option *Grobplanung (Skyplot berechnen)* aus, stellen Sie den gewünschten Cut-Off-Winkel (in Grad) ein und klicken Sie auf Analyse starten. Es öffnet sich ein Fenster mit einem Fortschrittsbalken. Je nach Ausdehnung des Oberflächenrasters und Rechenkapazität des Computers kann die Bildgenerierung einige Sekunden bis Minuten dauern. Die Analyse kann zur Weiterverwendung in Berichten als *PNG gespeichert werden. Klicken Sie dazu auf den Button *Analyse speichern* und wählen Sie den Speicherort aus. Vergessen Sie am Ende nicht, die Erfassung der Messung mit *OK* zu bestätigen.
 
 <img src="../imgs/network/GNSS-Obs.png" width="500" /><br/>
 <small>_Abbildung 2: Erfassen einer GNSS-Beobachtung._</small>
@@ -122,12 +125,57 @@ Ein Klick auf den Knopf ```GNSS-Beobachtungen löschen``` aktiviert das Löschen
 
 ---
 
-## Nivellierungs-Beobachtungen
+## Nivellement-Beobachtungen
 
-Die Knöpfe in diesem Bereich haben derzeit keine Funktion.
+In diesem Abschnitt des Registers ```Netzdefinition``` können Nivellement-Beobachtungen oder ähnliche Messungen erstellt, bearbeitet und gelöscht werden.
+
+### Nivellement-Beobachtungen erfassen
+
+Ein Klick auf den Knopf ```Nivellement-Beobachtungen erfassen``` aktiviert die Erfassung von Nivellement-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie den Startpunkt der Beobachtung aus dem Layer ```reference_points```.
+- Zeichnen Sie den Pfad der Nivellementstrecke (Linksklick auf die Zeichenoberfläche).
+- Schliessen Sie den Pfad ab, indem Sie den Endpunkt der Beobachtung aus dem Layer ```reference_points``` wählen.
+- Durch einen Recktsklick in der QGIS-Zeichenoberfläche können Sie den Pfad zurücksetzen.
+- Nach Beendung der Strecke wird ein neues Fenster geöffnet, indem Sie Einstellungen tätigen können:
+    - Messinstrument: Wählen Sie das Nivelliergerät aus der Dropdown-Liste aus.
+    - Messanordnung: Wählen Sie, ob es sich um ein Einzelnivellement oder um ein Doppelnivellement handelt.
+- Die Anzahl "Umsteller" wird automatisch aus "der Regel der Kunst" berechnet.
+
+### Nivellement-Beobachtungen bearbeiten
+
+Ein Klick auf den Knopf ```Nivellement-Beobachtungen bearbeiten``` aktiviert die Bearbeitung von Nivellement-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie eine Beobachtung aus dem Layer der Nivellement-Beobachtungen.
+- Ändern Sie die gewünschten Einstellungen
+- Bestätigen Sie mit *Ok*
+
+### Nivellement-Beobachtungen löschen
+
+Ein Klick auf den Knopf ```Nivellement-Beobachtungen löschen``` aktiviert die Löschung von Nivellement-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie eine Beobachtung aus dem Layer der Nivellement-Beobachtungen.
+- Bestätigen Sie die Löschung der Beobachtung
 
 ---
 
 ## Kreisel-Beobachtungen
 
-Die Knöpfe in diesem Bereich haben derzeit keine Funktion.
+In diesem Abschnitt des Registers ```Netzdefinition``` können Kreisel-Beobachtungen oder ähnliche Messungen erstellt, bearbeitet und gelöscht werden.
+
+### Kreisel-Beobachtungen erfassen
+
+Ein Klick auf den Knopf ```Kreisel-Beobachtungen erfassen``` aktiviert die Erfassung von Kreisel-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie den Startpunkt der Beobachtung aus dem Layer ```reference_points```.
+- Wählen Sie den Zielpunkt der Beobachtung aus dem Layer ```reference_points```.
+- Anschliessend wird ein neues Fenster geöffnet, indem Sie Einstellungen tätigen können:
+    - Messinstrument: Wählen Sie den Vermessungskreisel aus der Dropdown-Liste aus.
+    - Azimut: Das (theoretische/Karten-) Azimut wird berechnet und in der Maske dargestellt.
+
+### Kreisel-Beobachtungen löschen
+
+Ein Klick auf den Knopf ```Kreisel-Beobachtungen löschen``` aktiviert die Löschung von Kreisel-Beobachtungen in der QGIS-Zeichenoberfläche. Ein weiterer Klick auf den Knopf deaktiviert das Tool.
+
+- Selektieren Sie eine Beobachtung aus dem Layer der Kreisel-Beobachtungen.
+- Bestätigen Sie die Löschung der Beobachtung
