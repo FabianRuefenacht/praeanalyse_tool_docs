@@ -29,6 +29,7 @@ Der Perimeter bildet die Grundlage für den Bezug öffentlicher Geodaten (Fixpun
 - Der erste Klick in die Zeichenoberfläche setzt die erste Ecke der Bounding-Box. Der zweite Klick schliesst die Bounding-Box.
 - Während des Zeichnens wird eine provisorische Bounding-Box als **RubberBand** angezeigt.
 - Nach Abschluss des Zeichnens werden die Koordinaten und die Fläche des Perimeters berechnet und in der Plugin-Oberfläche unterhalb des Knopfes angezeigt.
+- **Bemerkung:** Wenn Sie einen Skyplot im Rahmen von GNSS-Messungen durchführen möchten, wählen sie den Parameter entsprechend gross.
 
 ---
 
