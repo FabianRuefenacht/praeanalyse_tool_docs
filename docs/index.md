@@ -19,6 +19,15 @@ Das vorliegende Dokument erläutert das QGIS-Plugin _Präanalysetool_.
 
 Sämtliche Veränderungen werden unter den entsprechenden Versionen aufgelistet. Die oberste Version ist die neueste.
 
+### v0.2.0-beta
+| Änderung | Bezeichnung | Bemerkung |
+|---|---|---|
+| **NEU** | Netzkonfiguration Nivellement | Nivellement-Messungen können nun in die Netzkonfiguration übernommen werden. Werden bei der Berechnung nucht berücksichtigt. |
+| **NEU** | Netzkonfiguration Vermessungskreisel | Kreisel-Messungen können nun in die Netzkonfiguration übernommen werden. Werden bei der Berechnung nucht berücksichtigt. |
+| **NEU** | Sichtbarkeitsanalyse GNSS | Bei der Planung von GNSS-Messungen kann nun ein Skyplot der Umgebung erstellt werden. |
+| **Änderung** | QGIS Version | Das Plugin wurde Qt6-ready gemacht. Ab dieser Version benötigen Sie eine Qt6-fähige QGIS-Version. |
+
+
 ### v0.1.1-beta
 
 | Änderung | Bezeichnung | Bemerkung |
