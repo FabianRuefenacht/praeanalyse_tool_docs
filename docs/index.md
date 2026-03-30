@@ -19,6 +19,12 @@ Das vorliegende Dokument erläutert das QGIS-Plugin _Präanalysetool_.
 
 Sämtliche Veränderungen werden unter den entsprechenden Versionen aufgelistet. Die oberste Version ist die neueste.
 
+### v0.2.1-beta
+| Änderung | Bezeichnung | Bemerkung |
+|---|---|---|
+| **NEU** | Export Horizontprofil Infinity | Das Horizontprofil geplanter GNSS Messungen kann nun als ASCII-Datei, für den Import in Leica Infinity, exportiert werden. |
+
+
 ### v0.2.0-beta
 | Änderung | Bezeichnung | Bemerkung |
 |---|---|---|
